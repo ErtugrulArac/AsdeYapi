@@ -13,14 +13,14 @@ const Gecis = (
                         {title}
                     </p>
 
-                    <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300">
+                    <p className="text-sm w-[80%] sm:text-base md:text-lg lg:text-xl text-gray-300">
                        
                         {subtitle}
 
                     </p>
 
                     <div className="flex justify-center lg:justify-start">
-                        <Button className="bg-gradient-to-r from-red-600 to-red-500 text-white px-6 py-3 rounded-xl font-semibold hover:scale-105 transition cursor-pointer" variant="destructive">
+                        <Button className="bg-gradient-to-r from-orange-600 to-orange-500 text-white px-12 py-6 md:text-2xl  rounded-xl font-semibold hover:scale-105 transition cursor-pointer" variant="destructive">
                             Ücretsiz Keşif Talep Et
                         </Button>
                     </div>
@@ -28,7 +28,7 @@ const Gecis = (
 
                 {/* Görsel */}
                 <img
-                    className="w-40 sm:w-72 md:w-80 lg:w-96 object-contain shadow-[rgba(0,0,0,0.3)_0px_8px_24px]"
+                    className="w-40 sm:w-72 md:w-80 lg:w-[490px] object-contain shadow-[rgba(0,0,0,0.3)_0px_8px_24px]"
                     src={img}
                     alt="Sineklik Kapı"
                     

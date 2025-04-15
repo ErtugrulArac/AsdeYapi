@@ -17,18 +17,18 @@ const gecisIcerikleri = [
     {
         title: "SİNEKLİK SİSTEMLERİNDE MODERN ÇÖZÜMLER",
         subtitle: "Evlerinizde sineklik çözümleriyle modern yaşam alanları oluşturun",
-        img: "kapımain.webp"
+        img: "sineklik1.webp"
     },
     {
         title: "PENCERELERİNİZ ARTIK DAHA GÜVENLİ",
         subtitle: "Çocuklar ve evcil hayvanlar için özel tasarlanmış sineklik sistemleri",
-        img: "pencere.webp"
+        img: "pencere1.webp"
 
     },
     {
         title: "MAKSİMUM HAVALANDIRMA, SIFIR SİNEK",
         subtitle: "Hava akışını engellemeden sinekleri dışarıda tutan sistemler",
-        img: "cambalkon.webp"
+        img: "cambalkon1.webp"
 
     },
     
@@ -55,7 +55,7 @@ export default function CarouselDemo() {
 
                         <CarouselContent>
                             {gecisIcerikleri.map((icerik, index) => (
-                                <CarouselItem key={index}>
+                                <CarouselItem className="flex items-center justify-center" key={index}>
                                     <div className="p-1">
                                         <Gecis title={icerik.title} subtitle={icerik.subtitle} img={icerik.img} />
                                     </div>
