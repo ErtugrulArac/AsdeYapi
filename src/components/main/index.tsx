@@ -2,6 +2,7 @@
 import * as React from "react";
 import Gecis from "@/components/main/gecis";
 import Autoplay from "embla-carousel-autoplay"
+import { GoArrowSwitch } from "react-icons/go";
 
 import {
     Carousel,
@@ -10,6 +11,28 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel";
+
+
+const gecisIcerikleri = [
+    {
+        title: "SİNEKLİK SİSTEMLERİNDE MODERN ÇÖZÜMLER",
+        subtitle: "Evlerinizde sineklik çözümleriyle modern yaşam alanları oluşturun",
+        img: "kapımain.webp"
+    },
+    {
+        title: "PENCERELERİNİZ ARTIK DAHA GÜVENLİ",
+        subtitle: "Çocuklar ve evcil hayvanlar için özel tasarlanmış sineklik sistemleri",
+        img: "pencere.webp"
+
+    },
+    {
+        title: "MAKSİMUM HAVALANDIRMA, SIFIR SİNEK",
+        subtitle: "Hava akışını engellemeden sinekleri dışarıda tutan sistemler",
+        img: "cambalkon.webp"
+
+    },
+    
+];
 
 
 export default function CarouselDemo() {
@@ -31,14 +54,15 @@ export default function CarouselDemo() {
                     >
 
                         <CarouselContent>
-                            {Array.from({ length: 5 }).map((_, index) => (
+                            {gecisIcerikleri.map((icerik, index) => (
                                 <CarouselItem key={index}>
                                     <div className="p-1">
-                                        <Gecis />
+                                        <Gecis title={icerik.title} subtitle={icerik.subtitle} img={icerik.img} />
                                     </div>
                                 </CarouselItem>
                             ))}
                         </CarouselContent>
+
 
                         {/* Oklar sadece md ve üstü cihazlarda görünür */}
                         <div className="hidden md:block">
@@ -52,7 +76,7 @@ export default function CarouselDemo() {
                 <div className="md:hidden mt-6 absolute top-20 left-1/2 transform -translate-x-1/2 flex items-center justify-center">
                     <div className="w-10 h-10 relative">
                         <div className="absolute left-0 top-0 animate-swipe text-gray-400 text-2xl">
-                            👈
+                            <GoArrowSwitch />
                         </div>
                     </div>
                 </div>
