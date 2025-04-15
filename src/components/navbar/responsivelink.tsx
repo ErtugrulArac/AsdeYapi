@@ -17,9 +17,8 @@ const responsivelink = () => {
                 <CiBoxList size={30} />Hakkımda
             </a> <a title='İletişim qr menü' className='flex  items-center gap-6 text-lg font-medium opacity-90' href="/iletisim">
                 <RiContactsLine size={30} /> İletişim
-            </a> <a title='Menüler qr menü' className='flex  items-center gap-6 text-lg font-medium opacity-90' href="/erzurum-qr-menu">
-                <MdOutlineRestaurantMenu size={30} /> Menüler
-            </a> <a title='Yorumlar qr menü' className='flex  items-center gap-6 text-lg font-medium opacity-90' href="https://www.arlanqrmenu.com/#yorumlar">
+            </a> 
+             <a title='Yorumlar qr menü' className='flex  items-center gap-6 text-lg font-medium opacity-90' href="https://www.arlanqrmenu.com/#yorumlar">
                 <FaRegComment size={30} /> Yorumlar
             </a>
 

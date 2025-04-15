@@ -21,9 +21,9 @@ export default function SheetDemo() {
             </SheetTrigger>
             <SheetContent className="overflow-auto" side={"left"}>
                 <SheetHeader>
-                    <SheetTitle className="flex items-center justify-center"><img className="w-20 " src="asdeyazısız.png" alt="Arlan Medya Siyah logo" /></SheetTitle>
-                    <SheetDescription>
-                        Dijital dönüşümününüzün bir partneri olarak yanınızdayız...
+                    <SheetTitle className="flex items-center justify-center"><img className="w-32 " src="asdekarebeyaz.webp" alt="Arlan Medya Siyah logo" /></SheetTitle>
+                    <SheetDescription className=" text-center">
+                        Estetik, Dayanıklılık, Konfor
                     </SheetDescription>
                 </SheetHeader>
 
