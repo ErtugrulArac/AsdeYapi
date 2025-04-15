@@ -13,7 +13,7 @@ const Gecis = (
                         {title}
                     </p>
 
-                    <p className="text-sm w-[80%] sm:text-base md:text-lg lg:text-xl text-gray-300">
+                    <p className="text-sm w-[80%] max-md:text-center max-md:w-full sm:text-base md:text-lg lg:text-xl text-gray-300">
                        
                         {subtitle}
 
