@@ -1,5 +1,7 @@
+"use client"
 import * as React from "react";
 import Gecis from "@/components/main/gecis";
+import Autoplay from "embla-carousel-autoplay"
 
 import {
     Carousel,
@@ -9,12 +11,25 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel";
 
+
 export default function CarouselDemo() {
+
+    const plugin = React.useRef(
+        Autoplay({ delay: 1500, stopOnInteraction: true })
+    )
+
     return (
         <div className="bg-gradient-to-r from-[#0D0D0D] to-[#1A1A1A]">
             <div className="pt-36 pb-8 flex flex-col items-center justify-center px-4">
                 <div className="relative w-full max-w-7xl">
-                    <Carousel className="w-full">
+                    <Carousel className="w-full"
+
+                        plugins={[plugin.current]}
+
+                        onMouseEnter={plugin.current.stop}
+                        onMouseLeave={plugin.current.reset}
+                    >
+
                         <CarouselContent>
                             {Array.from({ length: 5 }).map((_, index) => (
                                 <CarouselItem key={index}>
