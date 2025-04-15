@@ -25,7 +25,7 @@ const Gecis = () => {
 
         {/* Görsel */}
         <img
-          className="w-60 sm:w-72 md:w-80 lg:w-96 object-contain shadow-[rgba(0,0,0,0.3)_0px_8px_24px]"
+          className="w-40 sm:w-72 md:w-80 lg:w-96 object-contain shadow-[rgba(0,0,0,0.3)_0px_8px_24px]"
           src="kapımain.webp"
           alt="Sineklik Kapı"
         />
