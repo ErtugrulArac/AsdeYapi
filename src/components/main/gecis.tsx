@@ -7,7 +7,7 @@ const Gecis = () => {
       <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-8 lg:gap-14 text-white">
         {/* Yazı Alanı */}
         <div className="flex flex-col space-y-5 text-center lg:text-left max-w-xl">
-          <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+          <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold  leading-snug">
             SİNEKLİK <br /> SİSTEMLERİNDE <br /> MODERN ÇÖZÜMLER
           </p>
 
@@ -17,7 +17,7 @@ const Gecis = () => {
           </p>
 
           <div className="flex justify-center lg:justify-start">
-            <Button className="text-base sm:text-lg px-6 py-3" variant="destructive">
+            <Button className="bg-gradient-to-r from-red-600 to-red-500 text-white px-6 py-3 rounded-xl font-semibold hover:scale-105 transition cursor-pointer" variant="destructive">
               Ücretsiz Keşif Talep Et
             </Button>
           </div>
@@ -25,7 +25,7 @@ const Gecis = () => {
 
         {/* Görsel */}
         <img
-          className="w-60 sm:w-72 md:w-80 lg:w-96 object-contain"
+          className="w-60 sm:w-72 md:w-80 lg:w-96 object-contain shadow-[rgba(0,0,0,0.3)_0px_8px_24px]"
           src="kapımain.webp"
           alt="Sineklik Kapı"
         />
