@@ -56,9 +56,11 @@ export default function KategoriBileseni() {
 
     const urunler: Urun[] = [
 
-        { id: "1", title: "Pileli Sineklik", imageSrc: "pilelisinek.webp", kategoriId: "sineklik" },
+        { id: "1", title: "Pileli Sineklik", imageSrc: "pilelisineklik.webp", kategoriId: "sineklik" },
+        { id: "2", title: "Menteşeli Sineklik", imageSrc: "menteşelisineklik.webp", kategoriId: "sineklik" },
+        { id: "3", title: "Sürme Sineklik", imageSrc: "sürmesineklik.webp", kategoriId: "sineklik" },
         
-
+    
 
         { id: "4", title: "Cam Balkon", imageSrc: "cambalkon.webp", kategoriId: "cam-balkon" },
         { id: "5", title: "Merdiven Korkuluk", imageSrc: "merdivenkorkuluk.webp", kategoriId: "cam-balkon" },
