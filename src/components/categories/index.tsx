@@ -1,4 +1,8 @@
 "use client";
+import { Inter } from "next/font/google";
+
+// Inter fontunu çağır
+
 import * as React from "react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -11,6 +15,10 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel";
+const inter = Inter({
+    subsets: ["latin"],
+    weight: ["400", "600", "700"], // İhtiyacın olan ağırlıklar
+});
 
 interface Kategori {
     id: string;
@@ -52,19 +60,19 @@ export default function KategoriBileseni() {
 
 
         { id: "4", title: "Cam Balkon", imageSrc: "cambalkon.webp", kategoriId: "cam-balkon" },
-        { id: "5", title: "Cam 2", imageSrc: "merdivenkorkuluk.webp", kategoriId: "cam-balkon" },
-        { id: "6", title: "Cam 3", imageSrc: "balkonkorkuluk.webp", kategoriId: "cam-balkon" },
-        
+        { id: "5", title: "Merdiven Korkuluk", imageSrc: "merdivenkorkuluk.webp", kategoriId: "cam-balkon" },
+        { id: "6", title: "Balkon Korkuluk", imageSrc: "balkonkorkuluk.webp", kategoriId: "cam-balkon" },
+
 
         { id: "9", title: "Balkon Kapısı", imageSrc: "balkonkapısı.webp", kategoriId: "pvc" },
-        { id: "10", title: "Fransız İkili ", imageSrc: "fransızikili.webp", kategoriId: "pvc" },
-        { id: "11", title: "Gri Pencere", imageSrc: "gripencere.webp", kategoriId: "pvc" },
-        { id: "12", title: "PVC 3", imageSrc: "ikilipencere.webp", kategoriId: "pvc" },
-        { id: "13", title: "PVC 3", imageSrc: "sürgülükapı.webp", kategoriId: "pvc" },
-        { id: "14", title: "PVC 3", imageSrc: "tuvaletkapısı.webp", kategoriId: "pvc" },
-        { id: "15", title: "PVC 3", imageSrc: "üçlüpencere.webp", kategoriId: "pvc" },
-        { id: "16", title: "PVC 3", imageSrc: "vasistas.webp", kategoriId: "pvc" },
-        { id: "17", title: "PVC 3", imageSrc: "ahşappencere.webp", kategoriId: "pvc" },
+        { id: "10", title: "Fransız Pencere ", imageSrc: "fransızikili.webp", kategoriId: "pvc" },
+        { id: "11", title: "Antrasit Pencere", imageSrc: "gripencere.webp", kategoriId: "pvc" },
+        { id: "12", title: "Beyaz Pencere", imageSrc: "ikilipencere.webp", kategoriId: "pvc" },
+        { id: "13", title: "Sürgülü Pencere", imageSrc: "sürgülükapı.webp", kategoriId: "pvc" },
+        { id: "14", title: "WC Kapısı", imageSrc: "tuvaletkapısı.webp", kategoriId: "pvc" },
+        { id: "15", title: "Beyaz Pencere", imageSrc: "üçlüpencere.webp", kategoriId: "pvc" },
+        { id: "16", title: "Altınmeşe Pencere", imageSrc: "ahşappencere.webp", kategoriId: "pvc" },
+        { id: "17", title: "Vasistas", imageSrc: "vasistas.webp", kategoriId: "pvc" },
 
 
 
@@ -76,8 +84,8 @@ export default function KategoriBileseni() {
     return (
         <section className="py-16 sm:py-20 px-4 bg-[#2C2F33] font-inter relative">
             <div className="text-center mb-10 sm:mb-12">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-wide">ÜRÜN KATEGORİLERİ</h2>
-                <div className="mt-3 flex flex-wrap justify-center gap-4 sm:gap-6 text-gray-300 text-sm">
+                <h2 className={`text-2xl sm:text-3xl md:text-4xl  text-white tracking-wide font-black ${inter.className}`}>ÜRÜN KATEGORİLERİ</h2>
+                <div className={`mt-3 flex flex-wrap font-semibold justify-center gap-4 sm:gap-6 text-gray-300 text-sm ${inter.className}`}>
                     {kategoriler.map((kategori) => (
                         <span
                             key={kategori.id}
@@ -99,8 +107,8 @@ export default function KategoriBileseni() {
                     onMouseLeave={plugin.current.reset}>
 
                     <CarouselContent className={`-ml-3 md:-ml-4 flex ${urunler.filter((u) => u.kategoriId === aktifKategoriId).length < 4
-                            ? "justify-center"
-                            : ""
+                        ? "justify-center"
+                        : ""
                         }`}>
                         {urunler
                             .filter((urun) => urun.kategoriId === aktifKategoriId)
