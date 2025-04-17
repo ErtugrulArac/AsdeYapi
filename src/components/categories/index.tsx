@@ -65,11 +65,11 @@ export default function KategoriBileseni() {
 
 
         { id: "9", title: "Balkon Kapısı", imageSrc: "balkonkapısı.webp", kategoriId: "pvc" },
-        { id: "10", title: "Fransız Pencere ", imageSrc: "fransızikili.webp", kategoriId: "pvc" },
-        { id: "11", title: "Antrasit Pencere", imageSrc: "gripencere.webp", kategoriId: "pvc" },
-        { id: "12", title: "Beyaz Pencere", imageSrc: "ikilipencere.webp", kategoriId: "pvc" },
-        { id: "13", title: "Sürgülü Pencere", imageSrc: "sürgülükapı.webp", kategoriId: "pvc" },
-        { id: "14", title: "WC Kapısı", imageSrc: "tuvaletkapısı.webp", kategoriId: "pvc" },
+        { id: "10", title: "WC Kapısı", imageSrc: "tuvaletkapısı.webp", kategoriId: "pvc" },
+        { id: "11", title: "Fransız Pencere ", imageSrc: "fransızikili.webp", kategoriId: "pvc" },
+        { id: "12", title: "Antrasit Pencere", imageSrc: "gripencere.webp", kategoriId: "pvc" },
+        { id: "13", title: "Beyaz Pencere", imageSrc: "ikilipencere.webp", kategoriId: "pvc" },
+        { id: "14", title: "Sürgülü Pencere", imageSrc: "sürgülükapı.webp", kategoriId: "pvc" },
         { id: "15", title: "Beyaz Pencere", imageSrc: "üçlüpencere.webp", kategoriId: "pvc" },
         { id: "16", title: "Altınmeşe Pencere", imageSrc: "ahşappencere.webp", kategoriId: "pvc" },
         { id: "17", title: "Vasistas", imageSrc: "vasistas.webp", kategoriId: "pvc" },
