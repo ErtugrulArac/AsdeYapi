@@ -37,7 +37,7 @@ const KategoriKart = ({ title, imageSrc }: { title: string; imageSrc: string }) 
 };
 
 export default function KategoriBileseni() {
-    const [aktifKategoriId, setAktifKategoriId] = useState("cam-balkon");
+    const [aktifKategoriId, setAktifKategoriId] = useState("sineklik");
 
     const kategoriler: Kategori[] = [
         { id: "sineklik", title: "Sineklik", imageSrc: "/images/sineklik.png" },
@@ -64,8 +64,8 @@ export default function KategoriBileseni() {
         { id: "14", title: "PVC 3", imageSrc: "tuvaletkapısı.webp", kategoriId: "pvc" },
         { id: "15", title: "PVC 3", imageSrc: "üçlüpencere.webp", kategoriId: "pvc" },
         { id: "16", title: "PVC 3", imageSrc: "vasistas.webp", kategoriId: "pvc" },
-        { id: "16", title: "PVC 3", imageSrc: "ahşappencere.webp", kategoriId: "pvc" },
-        
+        { id: "17", title: "PVC 3", imageSrc: "ahşappencere.webp", kategoriId: "pvc" },
+
 
 
     ];
