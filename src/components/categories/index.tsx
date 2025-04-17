@@ -40,25 +40,34 @@ export default function KategoriBileseni() {
     const [aktifKategoriId, setAktifKategoriId] = useState("cam-balkon");
 
     const kategoriler: Kategori[] = [
+        { id: "sineklik", title: "Sineklik", imageSrc: "/images/sineklik.png" },
         { id: "cam-balkon", title: "Cam Balkon", imageSrc: "/images/cam-balkon.png" },
         { id: "pvc", title: "PVC Sistemleri", imageSrc: "/images/pvc.png" },
-        { id: "sineklik", title: "Sineklik", imageSrc: "/images/sineklik.png" },
+
     ];
 
     const urunler: Urun[] = [
-        { id: "1", title: "Cam 1", imageSrc: "pencere1.webp", kategoriId: "cam-balkon" },
-        { id: "2", title: "Cam 2", imageSrc: "gripencere.png", kategoriId: "cam-balkon" },
-        { id: "3", title: "Cam 3", imageSrc: "sürgülükapı.png", kategoriId: "cam-balkon" },
-        { id: "4", title: "Cam 4", imageSrc: "ahşappencere.png", kategoriId: "cam-balkon" },
-        { id: "5", title: "Cam 5", imageSrc: "3lükapı.png", kategoriId: "cam-balkon" },
 
-        { id: "6", title: "PVC 1", imageSrc: "/images/pvc1.png", kategoriId: "pvc" },
-        { id: "7", title: "PVC 2", imageSrc: "/images/pvc2.png", kategoriId: "pvc" },
-        { id: "8", title: "PVC 3", imageSrc: "/images/pvc3.png", kategoriId: "pvc" },
+        { id: "1", title: "Pileli Sineklik", imageSrc: "pilelisinek.webp", kategoriId: "sineklik" },
 
-        { id: "9", title: "Sineklik 1", imageSrc: "/images/sineklik1.png", kategoriId: "sineklik" },
-        { id: "10", title: "Sineklik 2", imageSrc: "/images/sineklik2.png", kategoriId: "sineklik" },
-        { id: "11", title: "Sineklik 3", imageSrc: "/images/sineklik3.png", kategoriId: "sineklik" },
+
+        { id: "4", title: "Cam Balkon", imageSrc: "cambalkon.webp", kategoriId: "cam-balkon" },
+        { id: "5", title: "Cam 2", imageSrc: "merdivenkorkuluk.webp", kategoriId: "cam-balkon" },
+        { id: "6", title: "Cam 3", imageSrc: "balkonkorkuluk.webp", kategoriId: "cam-balkon" },
+        
+
+        { id: "9", title: "Balkon Kapısı", imageSrc: "balkonkapısı.webp", kategoriId: "pvc" },
+        { id: "10", title: "Fransız İkili ", imageSrc: "fransızikili.webp", kategoriId: "pvc" },
+        { id: "11", title: "Gri Pencere", imageSrc: "gripencere.webp", kategoriId: "pvc" },
+        { id: "12", title: "PVC 3", imageSrc: "ikilipencere.webp", kategoriId: "pvc" },
+        { id: "13", title: "PVC 3", imageSrc: "sürgülükapı.webp", kategoriId: "pvc" },
+        { id: "14", title: "PVC 3", imageSrc: "tuvaletkapısı.webp", kategoriId: "pvc" },
+        { id: "15", title: "PVC 3", imageSrc: "üçlüpencere.webp", kategoriId: "pvc" },
+        { id: "16", title: "PVC 3", imageSrc: "vasistas.webp", kategoriId: "pvc" },
+        { id: "16", title: "PVC 3", imageSrc: "ahşappencere.webp", kategoriId: "pvc" },
+        
+
+
     ];
 
     const plugin = React.useRef(
@@ -89,7 +98,10 @@ export default function KategoriBileseni() {
                     onMouseEnter={plugin.current.stop}
                     onMouseLeave={plugin.current.reset}>
 
-                    <CarouselContent className="-ml-3 md:-ml-4">
+                    <CarouselContent className={`-ml-3 md:-ml-4 flex ${urunler.filter((u) => u.kategoriId === aktifKategoriId).length < 4
+                            ? "justify-center"
+                            : ""
+                        }`}>
                         {urunler
                             .filter((urun) => urun.kategoriId === aktifKategoriId)
                             .map((urun) => (
@@ -97,11 +109,11 @@ export default function KategoriBileseni() {
                                     key={urun.id}
                                     className="pl-3 md:pl-4 basis-[90%] sm:basis-[70%] md:basis-1/3 lg:basis-1/4"
                                 >
-                                    <div className="p-4 h-full flex flex-col items-center justify-between">
+                                    <div className="p-4 h-full flex flex-col items-center  justify-between">
                                         <img
                                             src={urun.imageSrc}
                                             alt={urun.title}
-                                            className="w-full h-40 sm:h-48 md:h-56 object-contain mb-3"
+                                            className="w-full  h-40 sm:h-48 md:h-56 object-contain mb-3"
                                         />
                                         <p className="text-base font-semibold text-gray-200 text-center line-clamp-2">
                                             {urun.title}
