@@ -57,6 +57,7 @@ export default function KategoriBileseni() {
     const urunler: Urun[] = [
 
         { id: "1", title: "Pileli Sineklik", imageSrc: "pilelisinek.webp", kategoriId: "sineklik" },
+        
 
 
         { id: "4", title: "Cam Balkon", imageSrc: "cambalkon.webp", kategoriId: "cam-balkon" },
@@ -66,12 +67,12 @@ export default function KategoriBileseni() {
 
         { id: "9", title: "Balkon Kapısı", imageSrc: "balkonkapısı.webp", kategoriId: "pvc" },
         { id: "10", title: "WC Kapısı", imageSrc: "tuvaletkapısı.webp", kategoriId: "pvc" },
-        { id: "11", title: "Fransız Pencere ", imageSrc: "fransızikili.webp", kategoriId: "pvc" },
-        { id: "12", title: "Antrasit Pencere", imageSrc: "gripencere.webp", kategoriId: "pvc" },
         { id: "13", title: "Beyaz Pencere", imageSrc: "ikilipencere.webp", kategoriId: "pvc" },
+        { id: "12", title: "Antrasit Pencere", imageSrc: "gripencere.webp", kategoriId: "pvc" },
+        { id: "16", title: "Altınmeşe Pencere", imageSrc: "ahşappencere.webp", kategoriId: "pvc" },
+        { id: "11", title: "Fransız Pencere ", imageSrc: "fransızikili.webp", kategoriId: "pvc" },
         { id: "14", title: "Sürgülü Pencere", imageSrc: "sürgülükapı.webp", kategoriId: "pvc" },
         { id: "15", title: "Beyaz Pencere", imageSrc: "üçlüpencere.webp", kategoriId: "pvc" },
-        { id: "16", title: "Altınmeşe Pencere", imageSrc: "ahşappencere.webp", kategoriId: "pvc" },
         { id: "17", title: "Vasistas", imageSrc: "vasistas.webp", kategoriId: "pvc" },
 
 
@@ -106,7 +107,7 @@ export default function KategoriBileseni() {
                     onMouseEnter={plugin.current.stop}
                     onMouseLeave={plugin.current.reset}>
 
-                    <CarouselContent className={`-ml-3 md:-ml-4 flex ${urunler.filter((u) => u.kategoriId === aktifKategoriId).length < 4
+                    <CarouselContent className={`-ml-3 md:-ml-4 flex ${urunler.filter((u) => u.kategoriId === aktifKategoriId).length < 2
                         ? "justify-center"
                         : ""
                         }`}>
