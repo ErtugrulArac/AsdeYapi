@@ -45,8 +45,10 @@ export default function KategoriBileseni() {
 
     const urunler: Urun[] = [
         { id: "1", title: "Cam 1", imageSrc: "pencere1.webp", kategoriId: "cam-balkon" },
-        { id: "2", title: "Cam 2", imageSrc: "/images/cam2.png", kategoriId: "cam-balkon" },
-        { id: "3", title: "Cam 3", imageSrc: "/images/cam3.png", kategoriId: "cam-balkon" },
+        { id: "2", title: "Cam 2", imageSrc: "gripencere.png", kategoriId: "cam-balkon" },
+        { id: "3", title: "Cam 3", imageSrc: "sürgülükapı.png", kategoriId: "cam-balkon" },
+        { id: "4", title: "Cam 3", imageSrc: "ahşappencere.png", kategoriId: "cam-balkon" },
+        { id: "5", title: "Cam 3", imageSrc: "3lükapı.png", kategoriId: "cam-balkon" },
 
         { id: "4", title: "PVC 1", imageSrc: "/images/pvc1.png", kategoriId: "pvc" },
         { id: "5", title: "PVC 2", imageSrc: "/images/pvc2.png", kategoriId: "pvc" },
