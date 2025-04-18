@@ -1,5 +1,8 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
+import {Outfit} from "next/font/google"
+
+const urbanist = Outfit({subsets: ["latin"], weight: ["300", "400", "600", "700", "900", "800"]})
 
 const Gecis = (
     { title, subtitle, img }: { title: string; subtitle: string; img: string }
@@ -8,8 +11,8 @@ const Gecis = (
         <div className="px-4">
             <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-8 lg:gap-14 text-white">
                 {/* Yazı Alanı */}
-                <div className="flex flex-col space-y-5 text-center lg:text-left max-w-xl">
-                    <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold  leading-snug">
+                <div className={`flex flex-col ${urbanist.className}  space-y-5 text-center lg:text-left max-w-xl`}>
+                    <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black  leading-snug">
                         {title}
                     </p>
 

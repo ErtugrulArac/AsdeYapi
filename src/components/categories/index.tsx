@@ -1,5 +1,5 @@
 "use client";
-import { Inter } from "next/font/google";
+import { Outfit } from "next/font/google";
 
 // Inter fontunu çağır
 
@@ -15,9 +15,9 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel";
-const inter = Inter({
+const inter = Outfit({
     subsets: ["latin"],
-    weight: ["400", "600", "700"], // İhtiyacın olan ağırlıklar
+    weight: ["300", "400", "600", "700", "900", "800"], // İhtiyacın olan ağırlıklar
 });
 
 interface Kategori {
@@ -39,7 +39,7 @@ const KategoriKart = ({ title, imageSrc }: { title: string; imageSrc: string }) 
             <div className="bg-white p-4 rounded-xl shadow-lg">
                 <img src={imageSrc} alt={title} className="h-28 sm:h-36 md:h-44 lg:h-52 object-contain" />
             </div>
-            <span className="mt-3 text-sm sm:text-base text-white font-semibold text-center">{title}</span>
+            <span className={`mt-3 text-sm ${inter.className} sm:text-base text-white font-semibold text-center`}>{title}</span>
         </div>
     );
 };
@@ -101,52 +101,54 @@ export default function KategoriBileseni() {
                     ))}
                 </div>
             </div>
+            <div className="flex items-center justify-center">
+                <div className="relative w-full max-w-7xl">
+                    <Carousel className=" w-full"
+                        plugins={[plugin.current]}
 
-            <div className="w-full max-w-6xl mx-auto">
-                <Carousel className="relative"
-                    plugins={[plugin.current]}
+                        onMouseEnter={plugin.current.stop}
+                        onMouseLeave={plugin.current.reset}>
 
-                    onMouseEnter={plugin.current.stop}
-                    onMouseLeave={plugin.current.reset}>
-
-                    <CarouselContent className={`-ml-3 md:-ml-4 flex ${urunler.filter((u) => u.kategoriId === aktifKategoriId).length <= 3
+                        <CarouselContent className={`-ml-3 md:-ml-4 flex ${urunler.filter((u) => u.kategoriId === aktifKategoriId).length <= 3
                             ? "md:justify-center"
                             : ""
-                        }`}>
-                        {urunler
-                            .filter((urun) => urun.kategoriId === aktifKategoriId)
-                            .map((urun) => (
-                                <CarouselItem
-                                    key={urun.id}
-                                    className="pl-3 md:pl-4 basis-[90%] sm:basis-[70%] md:basis-1/3 lg:basis-1/4"
-                                >
-                                    <div className="p-4 h-full flex flex-col items-center  justify-between">
-                                        <img
-                                            src={urun.imageSrc}
-                                            alt={urun.title}
-                                            className="w-full  h-40 sm:h-48 md:h-56 object-contain mb-3"
-                                        />
-                                        <p className="text-base font-semibold text-gray-200 text-center line-clamp-2">
-                                            {urun.title}
-                                        </p>
-                                    </div>
-                                </CarouselItem>
-                            ))}
-                    </CarouselContent>
+                            }`}>
+                            {urunler
+                                .filter((urun) => urun.kategoriId === aktifKategoriId)
+                                .map((urun) => (
+                                    <CarouselItem
+                                        key={urun.id}
+                                        className="pl-3 md:pl-4 basis-[90%] sm:basis-[70%] md:basis-1/3 lg:basis-1/4"
+                                    >
+                                        <div className="p-4 h-full flex flex-col items-center  justify-between">
+                                            <img
+                                                src={urun.imageSrc}
+                                                alt={urun.title}
+                                                className="w-full  h-40 sm:h-48 md:h-56 object-contain mb-3"
+                                            />
+                                            <p className="text-base font-semibold text-gray-200 text-center line-clamp-2">
+                                                {urun.title}
+                                            </p>
+                                        </div>
+                                    </CarouselItem>
+                                ))}
+                        </CarouselContent>
 
-                    <div className="hidden md:flex absolute top-1/2 left-0 right-0 justify-between px-2 -translate-y-1/2">
-                        <CarouselPrevious className="bg-white/80 hover:bg-white text-black rounded-full shadow" />
-                        <CarouselNext className="bg-white/80 hover:bg-white text-black rounded-full shadow" />
+                        <div className="hidden md:block ">
+                            <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-black rounded-full shadow" />
+                            <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 z-10  bg-white/80 hover:bg-white text-black rounded-full shadow" />
+                        </div>
+                    </Carousel>
+                    <div className="md:hidden  mt-6 flex justify-center">
+                        <div className="animate-bounce text-gray-400 text-2xl">
+                            <GoArrowSwitch />
+                        </div>
                     </div>
-                </Carousel>
+                </div>
             </div>
 
             {/* Mobil swipe göstergesi */}
-            <div className="md:hidden mt-6 flex justify-center">
-                <div className="animate-bounce text-gray-400 text-2xl">
-                    <GoArrowSwitch />
-                </div>
-            </div>
+
         </section>
     );
 }

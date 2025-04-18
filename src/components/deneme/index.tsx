@@ -7,12 +7,12 @@ const manrope = Manrope({ subsets: ["latin"], weight: ["400", "700", "800"] });
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white pt-12 gap-12 flex flex-col items-center text-left">
+    <main className="  pt-12 gap-12 flex flex-col items-center  text-left">
       <h1 className={`${specialGothic.className} text-3xl md:text-5xl font-bold text-center text-[#2E2B16] mb-10`}>
         An online mockup generator for <br className="hidden md:block" /> your design needs
       </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl  max-md:w-[85%] max-md:m-auto">
+      <div className="grid grid-cols-1 gap-10  md:grid-cols-3 max-w-6xl  max-md:w-[85%] max-md:m-auto">
         <div className="flex flex-col">
           <img src="kalp.webp" alt="Pillow Icon" className="w-12 h-12 mb-4" />
           <h2 className={`${manrope.className} text-2xl max-md:text-xl font-black mb-2 text-[#2E2B16]`}>Over 1,000 product mockup templates</h2>
