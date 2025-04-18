@@ -59,8 +59,8 @@ export default function KategoriBileseni() {
         { id: "1", title: "Pileli Sineklik", imageSrc: "pilelisineklik.webp", kategoriId: "sineklik" },
         { id: "2", title: "Menteşeli Sineklik", imageSrc: "menteşelisineklik.webp", kategoriId: "sineklik" },
         { id: "3", title: "Sürme Sineklik", imageSrc: "sürmesineklik.webp", kategoriId: "sineklik" },
-        
-    
+
+
 
         { id: "4", title: "Cam Balkon", imageSrc: "cambalkon.webp", kategoriId: "cam-balkon" },
         { id: "5", title: "Merdiven Korkuluk", imageSrc: "merdivenkorkuluk.webp", kategoriId: "cam-balkon" },
@@ -109,9 +109,9 @@ export default function KategoriBileseni() {
                     onMouseEnter={plugin.current.stop}
                     onMouseLeave={plugin.current.reset}>
 
-                    <CarouselContent className={`-ml-3 md:-ml-4 flex ${urunler.filter((u) => u.kategoriId === aktifKategoriId).length < 2
-                        ? "justify-center"
-                        : ""
+                    <CarouselContent className={`-ml-3 md:-ml-4 flex ${urunler.filter((u) => u.kategoriId === aktifKategoriId).length <= 3
+                            ? "md:justify-center"
+                            : ""
                         }`}>
                         {urunler
                             .filter((urun) => urun.kategoriId === aktifKategoriId)
