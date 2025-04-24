@@ -34,7 +34,7 @@ At Doorway, we understand that your time is valuable, which is why we offer quic
       "Superior Functionality",
       "Precision Frame Fabrication"
     ],
-    image: "pencere1.webp"
+    image: "sinekliksistemleri.webp"
   },
   ÖRNEKLER: {
     text: "",
@@ -93,7 +93,7 @@ export default function ProductTabs() {
               <img
                 src={content[activeTab].image}
                 alt="Product visual"
-                className="rounded-lg w-full object-contain"
+                className="rounded-lg w-full md:size-[600px] object-contain"
               />
             </div>
           </div>

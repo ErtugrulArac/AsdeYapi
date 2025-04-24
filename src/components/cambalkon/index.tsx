@@ -34,7 +34,7 @@ At Doorway, we understand that your time is valuable, which is why we offer quic
       "Superior Functionality",
       "Precision Frame Fabrication"
     ],
-    image: "pencere1.webp"
+    image: "cambalkonsistem.webp"
   },
   ÖRNEKLER: {
     text: "",
