@@ -10,7 +10,7 @@ const index = () => {
         <div className='bg-black fixed flex items-center top-0 w-full z-50 h-20 shadow-lg'>
             <div className='flex items-center justify-between w-[80%] m-auto max-md:w-[90%] max-lg:w-[90%] max-xl:w-[85%]'>
                 <div className='flex gap-5'>
-                    <Link title='Arlan medya qr anasayfa' href="/">
+                    <Link title='Asde Yapı Anasayfa' href="/">
                     <img className='w-24  max-md:w-16' src="asdeyazısız.webp" alt="Arlan Medya logo" />
                     </Link>
 

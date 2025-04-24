@@ -90,7 +90,7 @@ export default function ProductTabs() {
 
 
                 <a  href="tel:05447824655">
-                  <button className="bg-[#ff7a00] hover:bg-[#ff7a00] text-white font-semibold py-2 px-5 rounded-md transition-all">
+                  <button className="bg-[#ff7a00] hover:bg-[#ff7a00] text-white cursor-pointer font-semibold py-2 px-5 rounded-md transition-all">
                     Hemen İletişime Geç
                   </button>
                   <p className="text-xs ">Butona tıklayın, ücretsiz keşif fırsatını kaçırmayın.</p>

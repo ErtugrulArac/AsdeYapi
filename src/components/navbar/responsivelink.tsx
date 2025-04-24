@@ -13,13 +13,13 @@ const responsivelink = () => {
             <a title='Anasayfa qr menü' className='flex  items-center gap-6 text-lg font-semibold' href="/">
                 <RiHome5Line size={30} /> Anasayfa
             </a>
-            <a title='Hakkımda qr menü' className='flex  items-center gap-6 text-lg font-medium opacity-90' href="/hakkimizda">
-                <CiBoxList size={30} />Hakkımda
-            </a> <a title='İletişim qr menü' className='flex  items-center gap-6 text-lg font-medium opacity-90' href="/iletisim">
-                <RiContactsLine size={30} /> İletişim
+            <a title='Asde yapı Pvc Sistemleri' className='flex  items-center gap-6 text-lg font-medium opacity-90' href="https://www.asdeyapi.com/#pvc">
+                <CiBoxList size={30} />Pvc Kapı Pencere 
+            </a> <a title='Asde Yapı Sineklik Sistemleri' className='flex  items-center gap-6 text-lg font-medium opacity-90' href="https://www.asdeyapi.com/#sineklik">
+                <RiContactsLine size={30} /> Sineklik
             </a> 
-             <a title='Yorumlar qr menü' className='flex  items-center gap-6 text-lg font-medium opacity-90' href="https://www.arlanqrmenu.com/#yorumlar">
-                <FaRegComment size={30} /> Yorumlar
+             <a title='Asde Yapı Cambalkon Sistemleri' className='flex  items-center gap-6 text-lg font-medium opacity-90' href="https://www.asdeyapi.com/#cambalkon">
+                <FaRegComment size={30} /> Cambalkon
             </a>
 
         </div>
