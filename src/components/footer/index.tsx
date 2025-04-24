@@ -10,6 +10,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
+
+
 export default function Footer() {
   return (
     <footer className="bg-white w-full text-black font-sans pt-16 px-6">
@@ -48,35 +50,33 @@ export default function Footer() {
         <div className="sm:w-2/3">
           <Accordion type="single" collapsible className="w-full space-y-2">
             <AccordionItem value="company">
-              <AccordionTrigger>Company</AccordionTrigger>
+              <AccordionTrigger>Şirketimiz</AccordionTrigger>
               <AccordionContent>
-                About us, Careers, Press, Blog
+              Bursa’da 10 yılı aşkın tecrübe
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="product">
-              <AccordionTrigger>Product</AccordionTrigger>
+              <AccordionTrigger>İletişim </AccordionTrigger>
               <AccordionContent>
-                Features, Integrations, Pricing, FAQ
+              05522486977
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="resources">
-              <AccordionTrigger>Resources</AccordionTrigger>
+              <AccordionTrigger>Hizmetler</AccordionTrigger>
               <AccordionContent>
-                Docs, Tutorials, Community, Guides
+              Bursa sineklik, pvc ve cam balkon hizmetleri
+
+
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="support">
-              <AccordionTrigger>Support</AccordionTrigger>
+              <AccordionTrigger>Gizlilik</AccordionTrigger>
               <AccordionContent>
-                Contact, Help Center, Security
+              Verileriniz 3. şahıslarla paylaşılmaz
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value="legal">
-              <AccordionTrigger>Legal</AccordionTrigger>
-              <AccordionContent>
-                Terms, Privacy, Cookies, Licensing
-              </AccordionContent>
-            </AccordionItem>
+            
+             
           </Accordion>
         </div>
       </div>
@@ -84,12 +84,12 @@ export default function Footer() {
       {/* Social + Copyright */}
       <div className="mt-10 mb-4 text-center text-sm text-gray-400">
         <div className="flex justify-center gap-4 mb-4">
-          <a href="">  <FaYoutube className="hover:text-black transition" /></a>
-          <a href="">   <FaInstagram className="hover:text-black transition" /></a>
-          <a href="">   <FaFacebookF className="hover:text-black transition" /></a>
-          <a href="">   <FaTwitter className="hover:text-black transition" /></a>
+          <a target="_blank" href="https://www.instagram.com/asdeyapi/?hl=tr">  <FaYoutube className="hover:text-black transition" /></a>
+          <a target="_blank" href="https://www.instagram.com/asdeyapi/?hl=tr">   <FaInstagram className="hover:text-black transition" /></a>
+          <a target="_blank" href="https://www.facebook.com/people/Asde-Yap%C4%B1/61575193382177/">   <FaFacebookF className="hover:text-black transition" /></a>
+          <a target="_blank" href="https://www.instagram.com/asdeyapi/?hl=tr">   <FaTwitter className="hover:text-black transition" /></a>
         </div>
-        <p>Flower Shop © 2023. All rights reserved.</p>
+        <p>Asde Yapı © 2025. Tüm Hakları Saklıdır.</p>
       </div>
     </footer>
   );

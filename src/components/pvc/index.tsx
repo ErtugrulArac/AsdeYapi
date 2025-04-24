@@ -57,7 +57,7 @@ export default function ProductTabs() {
     };
 
     return (
-        <section className="bg-white text-black py-16 px-6 w-full md:h-[850px]">
+        <section className="bg-white text-black py-16 px-6 w-full md:h-[890px]">
             <h1 className={`${specialGothic.className} text-3xl md:text-5xl font-bold text-center text-gray-950 pb-10`}>Pvc Pencere Kapı Sistemleri </h1>
             <div className="max-w-6xl mx-auto">
                 {/* {/ Tabs /} */}
@@ -99,6 +99,17 @@ export default function ProductTabs() {
                                     ))}
                                 </ul>
                             )}
+                            <div className="flex pt-16 flex-col gap-4">
+
+
+                                <a target="_blank" href="https://www.whatsapp.com/channel/0029VaEO1GQLo4hp736e1Z3K">
+                                    <button className="bg-[#ff7a00] hover:bg-[#ff7a00] text-white font-semibold py-2 px-5 rounded-md transition-all">
+                                        Abone Ol
+                                    </button>
+                                    <p className="text-xs ">Butona tıklayın, ücretsiz keşif fırsatını kaçırmayın.</p>
+                                </a>
+
+                            </div>
                         </div>
 
 

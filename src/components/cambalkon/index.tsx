@@ -34,7 +34,7 @@ Ev, ofis, teras veya iş yeri fark etmeksizin her alana özel ölçü ve montaj 
       "Rüzgâr, toz, yağmur ve ses yalıtımı",
       "Paslanmaz, uzun ömürlü malzeme",
       "Estetik görünüm ve modern tasarım",
-      
+
     ],
     image: "cambalkonsistem.webp"
   },
@@ -57,7 +57,7 @@ export default function ProductTabs() {
   };
 
   return (
-    <section className="bg-[#1F3B2C] text-white py-16 px-6 w-full md:h-[850px]">
+    <section className="bg-[#1F3B2C] text-white py-16 px-6 w-full md:h-[900px]">
       <h1 className={`${specialGothic.className} text-3xl md:text-5xl font-bold text-center text-gray-100 pb-10`}>Cam Balkon Sistemleri</h1>
       <div className="max-w-6xl mx-auto">
         {/* {/ Tabs /} */}
@@ -66,9 +66,8 @@ export default function ProductTabs() {
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`pb-2 cursor-pointer tracking-widest font-semibold uppercase transition-colors duration-300 ${
-                activeTab === tab ? "border-b-2 border-white text-white" : "text-gray-400 hover:text-white"
-              }`}
+              className={`pb-2 cursor-pointer tracking-widest font-semibold uppercase transition-colors duration-300 ${activeTab === tab ? "border-b-2 border-white text-white" : "text-gray-400 hover:text-white"
+                }`}
             >
               {tab}
             </button>
@@ -89,6 +88,17 @@ export default function ProductTabs() {
                   ))}
                 </ul>
               )}
+              <div className="flex pt-16 flex-col gap-4">
+
+
+                <a target="_blank" href="https://www.whatsapp.com/channel/0029VaEO1GQLo4hp736e1Z3K">
+                  <button className="bg-[#ff7a00] hover:bg-[#ff7a00] text-white font-semibold py-2 px-5 rounded-md transition-all">
+                    Abone Ol
+                  </button>
+                  <p className="text-xs ">Butona tıklayın, ücretsiz keşif fırsatını kaçırmayın.</p>
+                </a>
+
+              </div>
             </div>
 
             <div className="w-full">

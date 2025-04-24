@@ -21,13 +21,13 @@ const gecisIcerikleri = [
     },
     {
         title: "PENCERELERİNİZ ARTIK DAHA GÜVENLİ",
-        subtitle: "Çocuklar ve evcil hayvanlar için özel tasarlanmış sineklik sistemleri",
+        subtitle: "Asde Yapı modern Pvc Pencere ve Kapı Sistemleri",
         img: "pencere1.webp"
 
     },
     {
-        title: "MAKSİMUM HAVALANDIRMA, SIFIR SİNEK",
-        subtitle: "Hava akışını engellemeden sinekleri dışarıda tutan sistemler",
+        title: "CAM BALKON İLE DÖRT MEVSİM KONFOR",
+        subtitle: "Asde Yapı Cam Balkon Sistemlerimiz ile Eviniz Her Mevsime Hazır",
         img: "cambalkon1.webp"
 
     },

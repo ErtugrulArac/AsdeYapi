@@ -9,35 +9,32 @@ export default function Home() {
   return (
     <main className="  pt-12 pb-12 gap-12 flex flex-col items-center  text-left">
       <h1 className={`${specialGothic.className} text-3xl md:text-5xl font-bold text-center text-[#2E2B16] mb-10`}>
-        An online mockup generator for <br className="hidden md:block" /> your design needs
+        Neden Asde Yapı'yı  <br className="hidden md:block" /> Tercih Etmelisin
       </h1>
 
       <div className="grid grid-cols-1 gap-10  md:grid-cols-3 max-w-6xl  max-md:w-[85%] max-md:m-auto">
         <div className="flex flex-col">
           <img src="kalp.webp" alt="Pillow Icon" className="w-12 h-12 mb-4" />
-          <h2 className={`${manrope.className} text-2xl max-md:text-xl font-black mb-2 text-[#2E2B16]`}>Over 1,000 product mockup templates</h2>
+          <h2 className={`${manrope.className} text-2xl max-md:text-xl font-black mb-2 text-[#2E2B16]`}>1000+ Tamamlanmış Montajla Sahadayız</h2>
           <p className={`${manrope.className}  text-[#585849] max-md:text-sm text-md max-w-xs`}>
-            Experiment with a wide range of customizable products to match your design ideas and easily
-            find the perfect mockups for your brand.
+          Asde Yapı olarak bugüne kadar 1000’den fazla montajı başarıyla tamamladık.
+          Sahip olduğumuz saha deneyimi sayesinde her yapıya en uygun çözümleri sunuyoruz
           </p>
         </div>
 
         <div className="flex flex-col ">
           <img src="çizgi.webp" alt="Background Icon" className="w-12 h-12 mb-4" />
-          <h2 className={`${manrope.className} text-2xl max-md:text-xl font-black mb-2 text-[#2E2B16]`}>Customizable mockup backgrounds</h2>
+          <h2 className={`${manrope.className} text-2xl max-md:text-xl font-black mb-2 text-[#2E2B16]`}>Dayanıklı ve Kaliteli Malzemeler</h2>
           <p className={`${manrope.className} text-[#585849] max-md:text-sm text-md max-w-xs`}>
-            Some Printify products feature customizable mockup backgrounds, empowering you to adjust
-            colors and designs to match your brand. Use this flexibility to create stunning mockups that
-            stand out – no complicated software necessary.
+            Yalnızca uzun ömürlü ve dayanıklı profiller, aksesuarlar ve camlar kullanıyor; sağlamlık konusunda taviz vermiyoruz.
           </p>
         </div>
 
         <div className="flex flex-col">
           <img src="kalp.webp" alt="Check Icon" className="w-12 h-12 mb-4" />
-          <h2 className={`${manrope.className} text-2xl max-md:text-xl font-black mb-2 text-[#2E2B16]`}>High-resolution mockups</h2>
+          <h2 className={`${manrope.className} text-2xl max-md:text-xl font-black mb-2 text-[#2E2B16]`}>Uygun Fiyat, Şeffaf Teklif</h2>
           <p className={`${manrope.className} text-[#585849] max-md:text-sm text-md max-w-xs`}>
-            Create professional mockups that show your products with lifelike detail, giving them a
-            polished look ready for your online store or marketing materials.
+            Gizli masraf yok. İhtiyacınıza özel en uygun fiyat teklifini sunuyor, iş bitiminde sürprizle karşılaşmamanız için her detayı şeffaf şekilde paylaşıyoruz.
           </p>
         </div>
       </div>

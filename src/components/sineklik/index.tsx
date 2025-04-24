@@ -86,6 +86,17 @@ export default function ProductTabs() {
                   ))}
                 </ul>
               )}
+              <div className="flex pt-16 flex-col gap-4">
+
+
+                <a target="_blank" href="https://www.whatsapp.com/channel/0029VaEO1GQLo4hp736e1Z3K">
+                  <button className="bg-[#ff7a00] hover:bg-[#ff7a00] text-white font-semibold py-2 px-5 rounded-md transition-all">
+                    Abone Ol
+                  </button>
+                  <p className="text-xs ">Butona tıklayın, ücretsiz keşif fırsatını kaçırmayın.</p>
+                </a>
+
+              </div>
             </div>
 
             <div className="w-full">
