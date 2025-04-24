@@ -84,9 +84,9 @@ export default function Footer() {
       {/* Social + Copyright */}
       <div className="mt-10 mb-4 text-center text-sm text-gray-400">
         <div className="flex justify-center gap-4 mb-4">
-          <a target="_blank" href="https://www.instagram.com/asdeyapi/?hl=tr">  <FaYoutube className="hover:text-black transition" /></a>
           <a target="_blank" href="https://www.instagram.com/asdeyapi/?hl=tr">   <FaInstagram className="hover:text-black transition" /></a>
           <a target="_blank" href="https://www.facebook.com/people/Asde-Yap%C4%B1/61575193382177/">   <FaFacebookF className="hover:text-black transition" /></a>
+          <a target="_blank" href="https://www.instagram.com/asdeyapi/?hl=tr">  <FaYoutube className="hover:text-black transition" /></a>
           <a target="_blank" href="https://www.instagram.com/asdeyapi/?hl=tr">   <FaTwitter className="hover:text-black transition" /></a>
         </div>
         <p>Asde Yapı © 2025. Tüm Hakları Saklıdır.</p>
