@@ -56,7 +56,7 @@ export default function ProductTabs() {
 
   return (
     <section className="bg-[#1F3B2C] text-white py-16 px-6 w-full md:h-[850px]">
-      <h1 className={`${specialGothic.className} text-3xl md:text-5xl font-bold text-center text-gray-100 pb-10`}>Sineklik Sistemleri</h1>
+      <h1 className={`${specialGothic.className} text-3xl md:text-5xl font-bold text-center text-gray-100 pb-10`}>Cam Balkon Sistemleri</h1>
       <div className="max-w-6xl mx-auto">
         {/* {/ Tabs /} */}
         <div className="flex justify-center gap-10 border-b border-gray-500 mb-10 text-sm sm:text-base">
