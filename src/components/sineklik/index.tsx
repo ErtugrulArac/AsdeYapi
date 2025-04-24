@@ -55,7 +55,7 @@ export default function ProductTabs() {
   };
 
   return (
-    <section className="bg-[#1F3B2C] text-white py-16 px-6 w-full md:h-[850px]">
+    <section id="sineklik" className="bg-[#1F3B2C] scroll-mt-[100px] text-white py-16 px-6 w-full md:h-[850px]">
       <h1 className={`${specialGothic.className} text-3xl md:text-5xl font-bold text-center text-gray-100 pb-10`}>Sineklik Sistemleri</h1>
       <div className="max-w-6xl mx-auto">
         {/* {/ Tabs /} */}
@@ -89,9 +89,9 @@ export default function ProductTabs() {
               <div className="flex pt-16 flex-col gap-4">
 
 
-                <a target="_blank" href="https://www.whatsapp.com/channel/0029VaEO1GQLo4hp736e1Z3K">
+                <a  href="tel:05447824655">
                   <button className="bg-[#ff7a00] hover:bg-[#ff7a00] text-white font-semibold py-2 px-5 rounded-md transition-all">
-                    Abone Ol
+                    Hemen İletişime Geç
                   </button>
                   <p className="text-xs ">Butona tıklayın, ücretsiz keşif fırsatını kaçırmayın.</p>
                 </a>
