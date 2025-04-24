@@ -40,7 +40,7 @@ At Doorway, we understand that your time is valuable, which is why we offer quic
     text: "",
     list: [],
     image: "",
-    gallery: ["sineklikmontaj.jpg", "penceremontaj.jpg", "sineklikmontaj.jpg", "penceremontaj.jpg", "sineklikmontaj.jpg", "penceremontaj.jpg"]
+    gallery: ["sinek1.webp", "sinek2.webp",]
   }
 };
 
