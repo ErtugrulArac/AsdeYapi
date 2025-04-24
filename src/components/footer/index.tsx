@@ -25,7 +25,7 @@ export default function Footer() {
             placeholder="Mail Adresini Giriniz"
             className="w-full sm:w-80 px-4 py-3 rounded-md bg-gray-100 text-sm focus:outline-none"
           />
-          <a target="_blank"  href="https://www.whatsapp.com/channel/0029VaEO1GQLo4hp736e1Z3K">
+          <a target="_blank" href="https://www.whatsapp.com/channel/0029VaEO1GQLo4hp736e1Z3K">
             <button className="bg-[#ff7a00] hover:bg-[#ff7a00] text-white cursor-pointer font-semibold py-3 px-8 rounded-md transition-all">
               Abone Ol
             </button>
@@ -42,7 +42,7 @@ export default function Footer() {
             <span className="text-[#ff7a00]">Yapı</span>
           </h3>
           <p className="text-gray-500 text-sm max-w-xs">
-          Estetik, Dayanıklılık, Konfor
+            Estetik, Dayanıklılık, Konfor
           </p>
         </div>
 
@@ -52,31 +52,37 @@ export default function Footer() {
             <AccordionItem value="company">
               <AccordionTrigger>Şirketimiz</AccordionTrigger>
               <AccordionContent>
-              Bursa’da 10 yılı aşkın tecrübe
+                Bursa’da 10 yılı aşkın tecrübe
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="product">
               <AccordionTrigger>İletişim </AccordionTrigger>
               <AccordionContent>
-              05522486977
+                05522486977
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="resources">
               <AccordionTrigger>Hizmetler</AccordionTrigger>
               <AccordionContent>
-              Bursa sineklik, pvc ve cam balkon hizmetleri
+                Bursa sineklik, pvc ve cam balkon hizmetleri
 
 
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="support">
-              <AccordionTrigger>Gizlilik</AccordionTrigger>
+              <AccordionTrigger>Gizlilik Politikası</AccordionTrigger>
               <AccordionContent>
-              Verileriniz 3. şahıslarla paylaşılmaz
+                Asde Yapı olarak, müşterilerimizin gizliliğini önemsiyoruz. Bu form üzerinden toplanan ad, soyad, telefon numarası ve <br /> e-posta gibi kişisel bilgiler, yalnızca müşteri taleplerine dönüş yapmak ve hizmet sunmak amacıyla kullanılacaktır. 
+                <br /> <br /> Bilgileriniz hiçbir şekilde üçüncü kişilerle paylaşılmaz.
+
+                İstediğiniz zaman bizimle iletişime geçerek verilerinizin silinmesini talep edebilirsiniz.
+
+                <br /> <br />İletişim: fatihasslanss@gmail.com | 0544 782 46 55
+
               </AccordionContent>
             </AccordionItem>
-            
-             
+
+
           </Accordion>
         </div>
       </div>

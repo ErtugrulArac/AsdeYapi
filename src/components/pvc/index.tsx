@@ -32,7 +32,7 @@ Her yapıya özel ölçü ve model seçenekleri, kaliteli işçilik ve profesyon
             "Isı ve ses yalıtımı sağlayan yüksek kaliteli PVC profiller",
             "Çeşitli açılım seçenekleri (çift açılım, sürme, vasistas vb.)",
             "Renk ve model çeşitliliği (beyaz, antrasit, ahşap desenli vb.)",
-            "Kolay temizlenebilir, bakım gerektirmeyen yüzeylern",
+            "Kolay temizlenebilen, bakım gerektirmeyen yüzeyler",
             "Profesyonel ölçü alma ve montaj hizmeti",
             "Uygun Fiyat, uzun ömürlü kullanım garantisi"
         ],
