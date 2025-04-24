@@ -15,17 +15,19 @@ export default function Footer() {
     <footer className="bg-white w-full text-black font-sans pt-16 px-6">
       {/* Newsletter */}
       <div className="max-w-4xl mx-auto text-center mb-20">
-        <h2 className="text-2xl font-semibold mb-2">Asdem Yapı İle İletişime Geç</h2>
-        <p className="text-gray-600 mb-6">We’ll send you updates once per week. No spam</p>
+        <h2 className="text-2xl font-semibold mb-2">Asde Yapı Gündemine Abone Ol</h2>
+        <p className="text-gray-600 mb-6">Asde Yapı ile alakalı gelişmelerden haberdar olun.</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <input
             type="email"
-            placeholder="Enter your email"
+            placeholder="Mail Adresini Giriniz"
             className="w-full sm:w-80 px-4 py-3 rounded-md bg-gray-100 text-sm focus:outline-none"
           />
-          <button className="bg-violet-500 hover:bg-violet-600 text-white font-semibold py-3 px-8 rounded-md transition-all">
-            SUBSCRIBE
-          </button>
+          <a href="https://www.whatsapp.com/channel/0029VaEO1GQLo4hp736e1Z3K">
+            <button className="bg-[#ff7a00] hover:bg-[#ff7a00] text-white font-semibold py-3 px-8 rounded-md transition-all">
+              Abone Ol
+            </button>
+          </a>
         </div>
       </div>
 
@@ -34,12 +36,11 @@ export default function Footer() {
         {/* Logo + Slogan */}
         <div className="sm:w-1/3">
           <h3 className="text-2xl font-bold mb-2">
-            <span className="text-black">As</span>
-            <span className="text-[#ff7a00]">dem</span>
-            <span className="text-black">Yapı</span>
+            <span className="text-black">Asde</span>
+            <span className="text-[#ff7a00]">Yapı</span>
           </h3>
           <p className="text-gray-500 text-sm max-w-xs">
-            Design a footer to provide digital experiences that creates a happy world.
+          Estetik, Dayanıklılık, Konfor
           </p>
         </div>
 
@@ -83,10 +84,10 @@ export default function Footer() {
       {/* Social + Copyright */}
       <div className="mt-10 mb-4 text-center text-sm text-gray-400">
         <div className="flex justify-center gap-4 mb-4">
-          <FaYoutube className="hover:text-black transition" />
-          <FaInstagram className="hover:text-black transition" />
-          <FaFacebookF className="hover:text-black transition" />
-          <FaTwitter className="hover:text-black transition" />
+          <a href="">  <FaYoutube className="hover:text-black transition" /></a>
+          <a href="">   <FaInstagram className="hover:text-black transition" /></a>
+          <a href="">   <FaFacebookF className="hover:text-black transition" /></a>
+          <a href="">   <FaTwitter className="hover:text-black transition" /></a>
         </div>
         <p>Flower Shop © 2023. All rights reserved.</p>
       </div>

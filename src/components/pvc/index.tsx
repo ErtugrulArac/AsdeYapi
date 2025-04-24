@@ -20,19 +20,21 @@ interface TabContent {
 const content: Record<TabKey, TabContent> = {
     AÇIKLAMA: {
         text: `
-Our Single Metal Doors are the perfect combination of strength, durability, and style. These doors are constructed from high-quality materials, ensuring that they will provide reliable security and long-lasting performance.
+PVC Pencere ve Kapı Sistemleri
+Isı ve ses yalıtımında maksimum performans, uzun ömürlü kullanım ve estetik görünüm…  
 
-Our doors are available in a range of sizes and finishes, making it easy to find the perfect match for your property. We offer a variety of hardware options to choose from, including handles, locks, and hinges, all designed for easy use and maximum security.
+  Asde Yapı ile hepsi bir arada!
+Bursa’da PVC pencere ve kapı sistemleri denince akla gelen ilk isim olan Asde Yapı, modern teknoloji ile üretilen, enerji tasarrufu sağlayan ve çevre dostu sistemlerle evinizi koruma altına alır.
 
-At Doorway, we understand that your time is valuable, which is why we offer quick and professional installation services. Our experienced technicians will work with you to ensure that your new door is installed quickly and efficiently, with minimal disruption to your daily routine.
+Her yapıya özel ölçü ve model seçenekleri, kaliteli işçilik ve profesyonel montajla hem şıklık hem dayanıklılık sunuyoruz.
     `,
         list: [
-            "Aesthetic Engineering",
-            "Truly Insulated Mainframe",
-            "Climate-Specific Performance",
-            "Airtight Construction",
-            "Superior Functionality",
-            "Precision Frame Fabrication"
+            "Isı ve ses yalıtımı sağlayan yüksek kaliteli PVC profiller",
+            "Çeşitli açılım seçenekleri (çift açılım, sürme, vasistas vb.)",
+            "Renk ve model çeşitliliği (beyaz, antrasit, ahşap desenli vb.)",
+            "Kolay temizlenebilir, bakım gerektirmeyen yüzeylern",
+            "Profesyonel ölçü alma ve montaj hizmeti",
+            "Uygun Fiyat, uzun ömürlü kullanım garantisi"
         ],
         image: "fransızarka.webp"
     },
@@ -40,7 +42,7 @@ At Doorway, we understand that your time is valuable, which is why we offer quic
         text: "",
         list: [],
         image: "",
-        gallery: ["pvc1.webp", "pvc2.webp", "pvc3.webp", ]
+        gallery: ["pvc1.webp", "pvc2.webp", "pvc3.webp",]
     }
 };
 

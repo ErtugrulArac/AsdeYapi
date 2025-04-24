@@ -20,19 +20,21 @@ interface TabContent {
 const content: Record<TabKey, TabContent> = {
   AÇIKLAMA: {
     text: `
-Our Single Metal Doors are the perfect combination of strength, durability, and style. These doors are constructed from high-quality materials, ensuring that they will provide reliable security and long-lasting performance.
+  Cam Balkon ve Korkuluk Sistemleri
+Manzaranız kapanmasın, konforunuz eksilmesin! Asde Yapı’nın modern cam balkon ve korkuluk sistemleriyle yaşam alanlarınızı daha kullanışlı ve güvenli hale getirin.
 
-Our doors are available in a range of sizes and finishes, making it easy to find the perfect match for your property. We offer a variety of hardware options to choose from, including handles, locks, and hinges, all designed for easy use and maximum security.
+Bursa’da cam balkon çözümlerinde uzman olan Asde Yapı, estetik görünüm, yalıtım ve sağlamlıkla yaşam alanlarınıza değer katar.
+Katlanır, sürgülü ya da sabit sistem seçenekleriyle balkonunuzu dört mevsim kullanışlı hale getirirken; şık ve dayanıklı alüminyum veya cam korkuluklarla güvenliğinizi de sağlıyoruz.
 
-At Doorway, we understand that your time is valuable, which is why we offer quick and professional installation services. Our experienced technicians will work with you to ensure that your new door is installed quickly and efficiently, with minimal disruption to your daily routine.
+Ev, ofis, teras veya iş yeri fark etmeksizin her alana özel ölçü ve montaj çözümleriyle fark yaratıyoruz.
     `,
     list: [
-      "Aesthetic Engineering",
-      "Truly Insulated Mainframe",
-      "Climate-Specific Performance",
-      "Airtight Construction",
-      "Superior Functionality",
-      "Precision Frame Fabrication"
+      "Temperli güvenlik camı kullanımı",
+      "Alüminyum ve cam korkuluk alternatifleri",
+      "Rüzgâr, toz, yağmur ve ses yalıtımı",
+      "Paslanmaz, uzun ömürlü malzeme",
+      "Estetik görünüm ve modern tasarım",
+      
     ],
     image: "cambalkonsistem.webp"
   },

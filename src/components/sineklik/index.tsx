@@ -20,19 +20,19 @@ interface TabContent {
 const content: Record<TabKey, TabContent> = {
   AÇIKLAMA: {
     text: `
-Our Single Metal Doors are the perfect combination of strength, durability, and style. These doors are constructed from high-quality materials, ensuring that they will provide reliable security and long-lasting performance.
+Bursa’da kaliteli sineklik çözümleri mi arıyorsunuz? Asde Yapı, uzun ömürlü, estetik ve fonksiyonel sineklik sistemleriyle yaşam alanlarınızı sinek ve haşerelere karşı koruma altına alıyor.
+Pencere ya da kapı fark etmeksizin, her ölçüye ve modele özel üretilen sinekliklerimiz sayesinde yaz aylarının keyfini rahatça çıkarabilirsiniz.
 
-Our doors are available in a range of sizes and finishes, making it easy to find the perfect match for your property. We offer a variety of hardware options to choose from, including handles, locks, and hinges, all designed for easy use and maximum security.
-
-At Doorway, we understand that your time is valuable, which is why we offer quick and professional installation services. Our experienced technicians will work with you to ensure that your new door is installed quickly and efficiently, with minimal disruption to your daily routine.
+Bursa sineklik sektöründe güvenilirliği ve müşteri memnuniyetini ön planda tutan Asde Yapı, uygun fiyat ve profesyonel montaj hizmetiyle fark yaratıyor.
+Ev, ofis, balkon veya cam balkonlar için özel tasarladığımız sistemler ile hem estetik hem konforu bir arada sunuyoruz.
     `,
     list: [
-      "Aesthetic Engineering",
-      "Truly Insulated Mainframe",
-      "Climate-Specific Performance",
-      "Airtight Construction",
-      "Superior Functionality",
-      "Precision Frame Fabrication"
+      "PVC ve alüminyum doğramalara tam uyum",
+      "Pileli, menteşeli ve sürme sineklik seçenekleri",
+      "Kolay temizlenebilir, dayanıklı tül yapısı",
+      "Ölçüye özel üretim ve yerinde ücretsiz keşif",
+      "Uzman ekip ile profesyonel montaj",
+      "Uygun fiyat, yüksek memnuniyet garantisi"
     ],
     image: "sinekliksistemleri.webp"
   },
@@ -64,9 +64,8 @@ export default function ProductTabs() {
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`pb-2 cursor-pointer tracking-widest font-semibold uppercase transition-colors duration-300 ${
-                activeTab === tab ? "border-b-2 border-white text-white" : "text-gray-400 hover:text-white"
-              }`}
+              className={`pb-2 cursor-pointer tracking-widest font-semibold uppercase transition-colors duration-300 ${activeTab === tab ? "border-b-2 border-white text-white" : "text-gray-400 hover:text-white"
+                }`}
             >
               {tab}
             </button>
