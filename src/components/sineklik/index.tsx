@@ -7,7 +7,7 @@ import { Dela_Gothic_One } from "next/font/google";
 const specialGothic = Dela_Gothic_One({ subsets: ["latin"], weight: ["400"] });
 
 
-const tabs = ["DESCRIPTION", "ÖRNEKLER"] as const;
+const tabs = ["AÇIKLAMA", "ÖRNEKLER"] as const;
 type TabKey = typeof tabs[number];
 
 interface TabContent {
@@ -18,7 +18,7 @@ interface TabContent {
 }
 
 const content: Record<TabKey, TabContent> = {
-  DESCRIPTION: {
+  AÇIKLAMA: {
     text: `
 Our Single Metal Doors are the perfect combination of strength, durability, and style. These doors are constructed from high-quality materials, ensuring that they will provide reliable security and long-lasting performance.
 
@@ -45,7 +45,7 @@ At Doorway, we understand that your time is valuable, which is why we offer quic
 };
 
 export default function ProductTabs() {
-  const [activeTab, setActiveTab] = useState<TabKey>("DESCRIPTION");
+  const [activeTab, setActiveTab] = useState<TabKey>("AÇIKLAMA");
   const [isOpen, setIsOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
@@ -74,7 +74,7 @@ export default function ProductTabs() {
         </div>
 
         {/* {/ Content /} */}
-        {activeTab === "DESCRIPTION" ? (
+        {activeTab === "AÇIKLAMA" ? (
           <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-8 items-start">
             <div>
               <p className="whitespace-pre-line leading-relaxed text-sm md:text-base">
