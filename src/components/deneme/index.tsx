@@ -7,7 +7,7 @@ const manrope = Manrope({ subsets: ["latin"], weight: ["400", "700", "800"] });
 
 export default function Home() {
   return (
-    <main className="  pt-12 gap-12 flex flex-col items-center  text-left">
+    <main className="  pt-12 pb-12 gap-12 flex flex-col items-center  text-left">
       <h1 className={`${specialGothic.className} text-3xl md:text-5xl font-bold text-center text-[#2E2B16] mb-10`}>
         An online mockup generator for <br className="hidden md:block" /> your design needs
       </h1>

@@ -1,65 +1,62 @@
-// pages/whyus/index.tsx
+// components/AnimatedCounters.tsx
+"use client";
+
 import React from "react";
-import { Manrope, Dela_Gothic_One } from "next/font/google";
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
+import { BsBuildingFillAdd, BsBuildingFillGear, BsPeopleFill } from "react-icons/bs";
 
-const specialGothic = Dela_Gothic_One({ subsets: ["latin"], weight: ["400"] });
-const manrope = Manrope({ subsets: ["latin"], weight: ["400", "700"] });
+const stats = [
+  {
+    label: "PROJE",
+    end: 780,
+    icon: <BsBuildingFillAdd className="text-orange-400 text-3xl mb-2 animate-bounce" />,
+    description: "780'den fazla farklı proje başarıyla tamamlandı."
+  },
+  {
+    label: "MONTAJ",
+    end: 3200,
+    icon: <BsBuildingFillGear className="text-orange-400 text-3xl mb-2 animate-bounce" />,
+    description: "Sineklik, cam balkon ve PVC montajlarında 3200'ü aşkın uygulama."
+  },
+  {
+    label: "MÜŞTERİ",
+    end: 1150,
+    icon: <BsPeopleFill className="text-orange-400 text-3xl mb-2 animate-bounce" />,
+    description: "1150'den fazla memnun müşteriyle hizmet kalitemizi kanıtladık."
+  },
+];
 
-export default function WhyUs() {
+export default function AnimatedCounters() {
+  const { ref, inView } = useInView({ triggerOnce: true });
+
   return (
-    <main className="bg-white md:p-6 pt-14 flex flex-col items-center">
-      <div className="w-full max-w-7xl  grid grid-cols-1 lg:grid-cols-2 md:gap-10 items-center">
-        <div className="text-left max-md:pl-6 max-md:pr-6 space-y-10 px-4">
-          <h2 className={`${specialGothic.className} text-3xl md:text-4xl font-bold text-[#2E2B16]`}>
-            Why Printify rocks?
-          </h2>
-          <div className={`space-y-6 ${manrope.className}`}>
-            <div className="flex gap-4 items-start">
-              <span className="text-xl">🔺</span>
-              <div>
-                <p className="font-black text-lg text-[#2E2B16]">Beginner-friendly</p>
-                <p className="text-sm text-[#585849]">Our AI Mockup Generator offers simple design tools to make beautiful custom mockups.</p>
-              </div>
+    <section ref={ref} className="bg-black py-16 px-4 w-full font-mono">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row text-center">
+        {stats.map((stat, index) => (
+          <div
+            key={index}
+            className="group relative flex-1 flex flex-col items-center px-6 py-6 transition duration-500 ease-in-out transform hover:scale-105 cursor-pointer"
+          >
+            {stat.icon}
+            <p className="text-white font-bold text-lg tracking-wide group-hover:text-gray-100">
+              {stat.label}
+            </p>
+            <div className="text-gray-400 text-3xl font-bold group-hover:text-white">
+              {inView ? <CountUp end={stat.end} duration={3} separator="," /> : 0}+
             </div>
-            <div className="flex gap-4 items-start">
-              <span className="text-xl">📦</span>
-              <div>
-                <p className="font-black text-lg text-[#2E2B16]">No order minimums</p>
-                <p className="text-sm text-[#585849]">Start creating and selling products without any order restrictions.</p>
-              </div>
+            <div className="mt-2 text-sm text-gray-400 max-w-xs group-hover:text-gray-200">
+              {stat.description}
             </div>
-            <div className="flex gap-4 items-start">
-              <span className="text-xl">🎨</span>
-              <div>
-                <p className="font-black text-lg text-[#2E2B16]">Quality prints</p>
-                <p className="text-sm text-[#585849]">Achieve vibrant, professional-quality prints that spotlight your designs perfectly on the final product.</p>
-              </div>
-            </div>
-            <div className="flex gap-4 items-start">
-              <span className="text-xl">🚚</span>
-              <div>
-                <p className="font-black text-lg text-[#2E2B16]">Fast shipping</p>
-                <p className="text-sm text-[#585849]">Enjoy quick global delivery, perfect for selling custom products internationally.</p>
-              </div>
-            </div>
-            <div className="flex gap-4 items-start">
-              <span className="text-xl">🌍</span>
-              <div>
-                <p className="font-black text-lg text-[#2E2B16]">Connect to every major marketplace</p>
-                <p className="text-sm text-[#585849]">Sell your designs across various website builders and eCommerce platforms effortlessly.</p>
-              </div>
-            </div>
+            {index !== stats.length - 1 && (
+              <div className="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 w-px h-10 bg-white" />
+            )}
+            {index !== stats.length - 1 && (
+              <div className="block md:hidden h-px bg-white mt-4 mx-auto" style={{ width: '90%' }} />
+            )}
           </div>
-        </div>
-
-        <div className="flex justify-center max-md:pt-8 w-full">
-          <img
-            src="gifcam.gif"
-            alt="Smiling man at table"
-            className="md:rounded-xl object-cover w-[460] max-md:w-full max-md:h-[600px] h-auto px-0 md:px-4"
-          />
-        </div>
+        ))}
       </div>
-    </main>
+    </section>
   );
 }
