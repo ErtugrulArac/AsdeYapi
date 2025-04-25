@@ -8,6 +8,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { GoArrowSwitch } from "react-icons/go";
 import Autoplay from "embla-carousel-autoplay"
+import Image from "next/image";
 import {
     Carousel,
     CarouselContent,
@@ -121,10 +122,13 @@ export default function KategoriBileseni() {
                                         className="pl-3 md:pl-4 basis-[90%] sm:basis-[70%] md:basis-1/3 lg:basis-1/4"
                                     >
                                         <div className="p-4 h-full flex flex-col items-center  justify-between">
-                                            <img
-                                                src={urun.imageSrc}
+                                            <Image
+                                                src={`/${urun.imageSrc}`}
                                                 alt={urun.title}
                                                 className="w-full  h-40 sm:h-48 md:h-56 object-contain mb-3"
+                                                width={600}
+                                                height={300}
+
                                             />
                                             <p className="text-base font-semibold text-gray-200 text-center line-clamp-2">
                                                 {urun.title}

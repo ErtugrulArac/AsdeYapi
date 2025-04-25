@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Outfit } from "next/font/google"
+import Image from "next/image";
 
 const urbanist = Outfit({ subsets: ["latin"], weight: ["300", "400", "600", "700", "900", "800"] })
 
@@ -32,10 +33,13 @@ const Gecis = (
                 </div>
 
                 {/* Görsel */}
-                <img
+                <Image
                     className="w-40 sm:w-72 md:w-80 lg:w-[490px] object-contain shadow-[rgba(0,0,0,0.3)_0px_8px_24px]"
                     src={img}
                     alt="Sineklik Kapı"
+                    width={500}
+                    height={300}
+                    priority
 
                 />
             </div>

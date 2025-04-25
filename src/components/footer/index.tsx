@@ -52,7 +52,8 @@ export default function Footer() {
             <AccordionItem value="company">
               <AccordionTrigger>Şirketimiz</AccordionTrigger>
               <AccordionContent>
-                Bursa’da 10 yılı aşkın tecrübe
+                Şirketimiz, 10 yılı aşkın tecrübesiyle sektöründe öncü konumda yer almakta olup, kalite odaklı hizmet anlayışı ve koşulsuz müşteri memnuniyeti ilkesiyle çalışmalarını sürdürmektedir. Yıllar içinde edindiğimiz deneyim, uzman kadromuz ve yenilikçi yaklaşımımızla her projede güvenilir çözümler sunuyor, müşterilerimizin beklentilerini en üst düzeyde karşılamaya özen gösteriyoruz. <br />   
+                 <a className="font-black" href="/hakkimizda">Devam Et</a>
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="product">
@@ -72,12 +73,14 @@ export default function Footer() {
             <AccordionItem value="support">
               <AccordionTrigger>Gizlilik Politikası</AccordionTrigger>
               <AccordionContent>
-                Asde Yapı olarak, müşterilerimizin gizliliğini önemsiyoruz. Bu form üzerinden toplanan ad, soyad, telefon numarası ve <br /> e-posta gibi kişisel bilgiler, yalnızca müşteri taleplerine dönüş yapmak ve hizmet sunmak amacıyla kullanılacaktır. 
+                Asde Yapı olarak, müşterilerimizin gizliliğini önemsiyoruz. Bu form üzerinden toplanan ad, soyad, telefon numarası ve <br /> e-posta gibi kişisel bilgiler, yalnızca müşteri taleplerine dönüş yapmak ve hizmet sunmak amacıyla kullanılacaktır.
                 <br /> <br /> Bilgileriniz hiçbir şekilde üçüncü kişilerle paylaşılmaz.
 
                 İstediğiniz zaman bizimle iletişime geçerek verilerinizin silinmesini talep edebilirsiniz.
 
-                <br /> <br />İletişim: fatihasslanss@gmail.com | 0544 782 46 55
+                <br /> <br />İletişim: fatihasslanss@gmail.com | 0544 782 46 55 <br /><br />
+
+                <a className="font-bold" href="https://docs.google.com/document/d/1UsQLTp0GodeftHSlqEYvXClQ6OmrtGvRvmK7AZLNL0Y/edit?tab=t.0">Gizlilik Politikasına Git</a>
 
               </AccordionContent>
             </AccordionItem>

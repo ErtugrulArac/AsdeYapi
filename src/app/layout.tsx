@@ -4,13 +4,14 @@ import "./globals.css";
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import Wp from "@/components/wp/index"
+import Script from "next/script";
 
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
-
+const GA_ID = "G-CLH0267G16"
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
@@ -19,15 +20,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Asde Yapı - Bursa PVC, Cam Balkon ve Sineklik Sistemleri",
   description: "Asde Yapı olarak Bursa'da sineklik, cam balkon ve PVC sistemlerinde modern ve kaliteli çözümler sunuyoruz. Hızlı montaj, dayanıklı malzeme ve müşteri memnuniyeti ile fark yaratıyoruz.",
-  keywords: [
-    "Asde Yapı",
-    "PVC sistemleri",
-    "Cam balkon Bursa",
-    "Sineklik montajı",
-    "Modern yapı çözümleri",
-    "Alüminyum pencere sinekliği",
-    "Uygun fiyat cam balkon"
-  ],
+  
   authors: [{ name: "Asde Yapı", url: "https://asdeyapi.com" }],
   robots: "index, follow",
   openGraph: {
@@ -55,6 +48,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_ID}', {
+              page_path: window.location.pathname,
+            });
+          `}
+        </Script>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

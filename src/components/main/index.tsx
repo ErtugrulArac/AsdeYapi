@@ -17,18 +17,18 @@ const gecisIcerikleri = [
     {
         title: "SİNEKLİK SİSTEMLERİNDE MODERN ÇÖZÜMLER",
         subtitle: "Evlerinizde sineklik çözümleriyle modern yaşam alanları oluşturun",
-        img: "sineklik1.webp"
+        img: "/sineklik1.webp"
     },
     {
         title: "PENCERELERİNİZ ARTIK DAHA GÜVENLİ",
         subtitle: "Asde Yapı modern Pvc Pencere ve Kapı Sistemleri",
-        img: "pencere1.webp"
+        img: "/pencere1.webp"
 
     },
     {
         title: "CAM BALKON İLE DÖRT MEVSİM KONFOR",
         subtitle: "Asde Yapı Cam Balkon Sistemlerimiz ile Eviniz Her Mevsime Hazır",
-        img: "cambalkon1.webp"
+        img: "/cambalkon1.webp"
 
     },
     
@@ -38,7 +38,7 @@ const gecisIcerikleri = [
 export default function CarouselDemo() {
 
     const plugin = React.useRef(
-        Autoplay({ delay: 1500, stopOnInteraction: true })
+        Autoplay({ delay: 6000, stopOnInteraction: true })
     )
 
     return (

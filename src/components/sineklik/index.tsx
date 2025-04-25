@@ -3,6 +3,7 @@
 
 import React, { useState } from "react";
 import { Dialog } from "@headlessui/react";
+import Image from "next/image";
 import { Dela_Gothic_One } from "next/font/google";
 const specialGothic = Dela_Gothic_One({ subsets: ["latin"], weight: ["400"] });
 
@@ -100,9 +101,11 @@ export default function ProductTabs() {
             </div>
 
             <div className="w-full">
-              <img
-                src={content[activeTab].image}
+              <Image
+                src={`/${content[activeTab].image}`}
                 alt="Product visual"
+                width={600}
+                height={600}
                 className="rounded-lg w-full md:size-[600px] object-contain"
               />
             </div>
@@ -111,7 +114,7 @@ export default function ProductTabs() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
             {content["ÖRNEKLER"].gallery?.map((img, index) => (
               <button key={index} onClick={() => handleImageClick(img)}>
-                <img src={img} alt="örnek" className="rounded-lg  size-[280px] object-cover cursor-pointer" />
+                <Image width={280} height={280} src={`/${img}`} alt="örnek" className="rounded-lg  size-[280px] object-cover cursor-pointer" />
               </button>
             ))}
 
@@ -119,7 +122,7 @@ export default function ProductTabs() {
             <Dialog open={isOpen} onClose={() => setIsOpen(false)} className="fixed z-50 inset-0 flex items-center justify-center">
               <div className="fixed inset-0 bg-black/70" aria-hidden="true" />
               <Dialog.Panel className="relative z-50 max-w-3xl w-full p-4">
-                <img src={selectedImage || ""} alt="selected" className="w-full h-auto rounded-lg shadow-lg" />
+                <Image width={900} height={900} src={`/${selectedImage}` || ""} alt="selected" className="w-full h-auto rounded-lg shadow-lg" />
               </Dialog.Panel>
             </Dialog>
           </div>

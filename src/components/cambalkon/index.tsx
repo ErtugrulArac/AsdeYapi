@@ -3,6 +3,7 @@
 
 import React, { useState } from "react";
 import { Dialog } from "@headlessui/react";
+import Image from "next/image";
 import { Dela_Gothic_One } from "next/font/google";
 const specialGothic = Dela_Gothic_One({ subsets: ["latin"], weight: ["400"] });
 
@@ -91,7 +92,7 @@ export default function ProductTabs() {
               <div className="flex pt-16 flex-col gap-4">
 
 
-                <a  href="tel:05447824655">
+                <a href="tel:05447824655">
                   <button className="bg-[#ff7a00] hover:bg-[#ff7a00] text-white cursor-pointer font-semibold py-2 px-5 rounded-md transition-all">
                     Hemen İletişime Geç
                   </button>
@@ -102,8 +103,10 @@ export default function ProductTabs() {
             </div>
 
             <div className="w-full">
-              <img
-                src={content[activeTab].image}
+              <Image
+                width={900}
+                height={800}
+                src={`/${content[activeTab].image}`}
                 alt="Product visual"
                 className="rounded-lg w-full object-contain"
               />
@@ -113,7 +116,7 @@ export default function ProductTabs() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
             {content["ÖRNEKLER"].gallery?.map((img, index) => (
               <button key={index} onClick={() => handleImageClick(img)}>
-                <img src={img} alt="örnek" className="rounded-lg  size-[280px] object-cover cursor-pointer" />
+                <Image width={280} height={280} src={`/${img}`} alt="örnek" className="rounded-lg  size-[280px] object-cover cursor-pointer" />
               </button>
             ))}
 
@@ -121,7 +124,7 @@ export default function ProductTabs() {
             <Dialog open={isOpen} onClose={() => setIsOpen(false)} className="fixed z-50 inset-0 flex items-center justify-center">
               <div className="fixed inset-0 bg-black/70" aria-hidden="true" />
               <Dialog.Panel className="relative z-50 max-w-3xl w-full p-4">
-                <img src={selectedImage || ""} alt="selected" className="w-full h-auto rounded-lg shadow-lg" />
+                <Image width={900} height={900} src={`/${selectedImage}` || ""} alt="selected" className="w-full h-auto rounded-lg shadow-lg" />
               </Dialog.Panel>
             </Dialog>
           </div>
