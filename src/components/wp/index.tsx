@@ -3,11 +3,24 @@
 
 import React, { useState } from "react";
 import { FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
-import Link from "next/link";
 
 export default function FloatingContactButtons() {
   const [showTooltip, setShowTooltip] = useState(true);
   const phone = "05447824655";
+
+  const handleConversion = (url: string) => {
+    if (typeof window !== "undefined" && (window as any).gtag) {
+      (window as any).gtag("event", "conversion", {
+        send_to: "AW-17029946954/TTx4CKu94cEaEMq8wbg_",
+        event_callback: () => {
+          window.location.href = url;
+        },
+      });
+    } else {
+      window.location.href = url;
+    }
+  };
+  
 
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end space-y-3">
@@ -24,23 +37,22 @@ export default function FloatingContactButtons() {
       )}
 
       {/* {/ WhatsApp Button /} */}
-      <Link
-        href={`https://wa.me/90${phone}`}
-        target="_blank"
+      <button
+        onClick={() => handleConversion(`https://wa.me/90${phone}`)}
         className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg flex items-center justify-center"
         aria-label="WhatsApp ile mesaj gönder"
       >
         <FaWhatsapp className="text-xl" />
-      </Link>
+      </button>
 
       {/* {/ Phone Button /} */}
-      <a
-        href={`tel:${phone}`}
+      <button
+        onClick={() => handleConversion(`tel:${phone}`)}
         className="bg-[#e07e22] hover:bg-[#ff7a00] text-white p-4 rounded-full shadow-lg flex items-center justify-center"
         aria-label="Telefonla ara"
       >
         <FaPhoneAlt className="text-xl" />
-      </a>
+      </button>
     </div>
   );
 }
