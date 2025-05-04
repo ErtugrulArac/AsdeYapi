@@ -20,7 +20,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Asde Yapı - Bursa PVC, Cam Balkon ve Sineklik Sistemleri",
   description: "Asde Yapı olarak Bursa'da sineklik, cam balkon ve PVC sistemlerinde modern ve kaliteli çözümler sunuyoruz. Hızlı montaj, dayanıklı malzeme ve müşteri memnuniyeti ile fark yaratıyoruz.",
-  
+
   authors: [{ name: "Asde Yapı", url: "https://asdeyapi.com" }],
   robots: "index, follow",
   openGraph: {
@@ -49,7 +49,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        
         <Script
           strategy="afterInteractive"
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
@@ -62,6 +61,7 @@ export default function RootLayout({
             gtag('config', '${GA_ID}', {
               page_path: window.location.pathname,
             });
+            gtag('config', 'AW-17029946954');
           `}
         </Script>
       </head>
