@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Asde Yapı – Corporate Website
 
-## Getting Started
+A fully responsive and SEO-optimized corporate website developed for **Asde Yapı**, a construction and architectural solutions company.  
+This project aims to create a strong digital footprint that reflects Asde Yapı’s professionalism, services, and values.
 
-First, run the development server:
+## 🎯 Project Purpose
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The goal of this project is to establish a trustworthy and modern online presence for Asde Yapı, making it easier for clients to understand the brand, explore services, and get in touch — all through a fast, mobile-optimized, and visually appealing interface.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Live Site  
+🌐 [https://asdeyapi.com](https://asdeyapi.com)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠 Tech Stack
+- **React.js** (with Vite)
+- **Tailwind CSS**
+- **TypeScript**
+- **Responsive Web Design**
+- **Vercel** (Continuous Deployment)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 💡 Key Features
+- ✅ Fully **responsive** across mobile, tablet, and desktop devices
+- ✅ Structured for **SEO optimization** with semantic HTML, meta tags and performance best practices
+- ✅ Tailored for construction industry branding and user expectations
+- ✅ Hero sections with smooth transitions and structured service highlights
+- ✅ Fast loading with clean modular components
 
-## Learn More
+## 📸 Screenshots  
+*(Place relevant visuals like `/public/screenshot.png` here)*
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📦 Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Deployed on **Vercel** with a custom domain connection:  
+🔗 **[asdeyapi.com](https://asdeyapi.com)**
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+📂 Feel free to fork, inspect the codebase, or clone the project for inspiration.
