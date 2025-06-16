@@ -1,7 +1,7 @@
 import React from 'react'
-import Hangisiuygun from "@/app/sineklik/hangisiuygun"
-import Main from "@/app/sineklik/main"
-import Karsılama from "@/app/sineklik/karsılama"
+import Hangisiuygun from "@/app/anasineklik/hangisiuygun"
+import Main from "@/app/anasineklik/main"
+import Karsılama from "@/app/anasineklik/karsılama"
 
 const page = () => {
     return (

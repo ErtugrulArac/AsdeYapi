@@ -90,9 +90,9 @@ export default function ProductTabs() {
               <div className="flex pt-16 flex-col gap-4">
 
 
-                <a  href="tel:05447824655">
+                <a  href="/anasineklik">
                   <button className="bg-[#ff7a00] hover:bg-[#ff7a00] text-white cursor-pointer font-semibold py-2 px-5 rounded-md transition-all">
-                    Hemen İletişime Geç
+                    Daha Fazla Bilgi Al
                   </button>
                   <p className="text-xs ">Butona tıklayın, ücretsiz keşif fırsatını kaçırmayın.</p>
                 </a>
