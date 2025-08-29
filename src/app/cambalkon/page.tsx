@@ -85,13 +85,39 @@ export default function CamBalkonPage() {
         </div>
       </section>
 
+
+
+      {/* Yazılar */}
+
+      <section>
+        <Textaw />
+      </section>
+
+
+      {/* Galery */}
+
+      <section>
+        <div className="max-w-7xl mx-auto px-4  mb-60">
+          <h1 className={`${specialGothic.className} text-3xl md:text-5xl font-bold text-center text-[#2E2B16] mb-2`}>
+            Galerimiz <br className="hidden md:block" /> 
+          </h1>
+          <p className="text-center text-xs text-gray-600 mb-5">Cam balkon projelerimizi keşfedin. (Resimlere tıklayarak inceleyebilirsiniz.)</p>
+        <Gallery />
+        </div>
+      </section>
+
       {/* Neden Asde Yapı */}
       <div className="max-w-7xl mx-auto px-4">
         <Deneme />
       </div>
+
       {/* Sayılarla Biz */}
 
       <Giftext />
+
+
+
+
 
       {/* Referanslar */}
       <section className="py-20 bg-black">
@@ -130,17 +156,8 @@ export default function CamBalkonPage() {
         </div>
       </section>
 
-      {/* Yazılar */}
 
-      <section>
-            <Textaw />
-      </section>
 
-      {/* Galery */}
-
-      <section>
-            <Gallery />
-      </section>
 
     </main>
   );
