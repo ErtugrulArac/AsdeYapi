@@ -59,7 +59,7 @@ export default function Footer() {
             <AccordionItem value="product">
               <AccordionTrigger>İletişim </AccordionTrigger>
               <AccordionContent>
-                05522486977
+                0544 782 46 55 
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="resources">

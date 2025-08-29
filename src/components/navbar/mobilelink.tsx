@@ -37,7 +37,6 @@ export default function SheetDemo() {
           <SheetDescription className="text-center">
             Estetik, Dayanıklılık, Konfor
             <p className="font-bold">0544 782 4655</p>
-            <p className="font-bold">0552 248 6977</p>
           </SheetDescription>
         </SheetHeader>
 
