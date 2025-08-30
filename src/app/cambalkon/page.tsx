@@ -15,7 +15,6 @@ import { Button } from "@/components/ui/button";
 import { Manrope, Dela_Gothic_One } from "next/font/google";
 import { Outfit } from "next/font/google"
 import Textaw from "@/components/textaw";
-import Gallery from "@/components/galery";
 
 
 const urbanist = Outfit({ subsets: ["latin"], weight: ["300", "400", "600", "700", "900", "800"] })
@@ -61,8 +60,8 @@ export default function CamBalkonPage() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               { name: "Isıcamlı Cam Balkon", img: "/isicamli.webp", desc: "Isıcamlı cam balkon, ısı yalıtımı sağlayarak enerji tasarrufu yapmanıza yardımcı olur." },
-              { name: "Temperli Cam Balkon", img: "/isicamli.webp", desc: "Temperli cam balkon, yüksek dayanıklılığı ile güvenli bir kullanım sunar." },
-              { name: "Isıcamlı Cam Balkon", img: "/isicamli.webp", desc: "Isıcamlı cam balkon, estetik görünümü ile mekanınıza şıklık katar." },
+              { name: "Temperli Cam Balkon", img: "/temperli.webp", desc: "Temperli cam balkon, yüksek dayanıklılığı ile güvenli bir kullanım sunar." },
+              { name: "Giyotin Sistem", img: "/giyotin.webp", desc: "Giyotin sistem cam balkon, estetik görünümü ile mekanınıza şıklık katar." },
             ].map((item) => (
               <Card
                 key={item.name}
@@ -95,14 +94,57 @@ export default function CamBalkonPage() {
 
 
       {/* Galery */}
+      {/* galeri kısmı değişecek */}
 
       <section>
-        <div className="max-w-7xl mx-auto px-4  mb-60">
+        <div className="max-w-7xl mx-auto px-4  ">
           <h1 className={`${specialGothic.className} text-3xl md:text-5xl font-bold text-center text-[#2E2B16] mb-2`}>
-            Galerimiz <br className="hidden md:block" /> 
+            Galerimiz <br className="hidden md:block" />
           </h1>
           <p className="text-center text-xs text-gray-600 mb-5">Cam balkon projelerimizi keşfedin. (Resimlere tıklayarak inceleyebilirsiniz.)</p>
-        <Gallery />
+          <section id="galeri" className="py-20 ">
+            <div className="container mx-auto px-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div className="rounded-xl h-[340px] max-md:h-80 overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                  <img
+                    src="gal1.webp"
+                    alt="[Cam korkuluk]"
+                    className="w-full h-auto object-contain"
+                  />
+                </div>
+                <div className="rounded-xl h-[340px] max-md:h-80 overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                  <img
+                    src="gal2.webp"
+                    alt="[Bursa ısıcamlı cam balkon]"
+                    className="w-full h-auto object-contain"
+                  />
+                </div>
+                <div className="rounded-xl h-[340px] max-md:h-80 overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                  <img
+                    src="gal3.webp"
+                    alt="[Profesyonel cam balkon ekibini gösteren bir fotoğraf]"
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+                <div className="rounded-xl h-[340px] max-md:h-80 overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                  <img
+                    src="gal4.webp"
+                    alt="[Deniz manzaralı cam balkon]"
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+                <div className="rounded-xl h-[340px] max-md:h-80 overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                  <img
+                    src="gal5.webp"
+                    alt="[]"
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+                
+              </div>
+            </div>
+          </section>
+
         </div>
       </section>
 
