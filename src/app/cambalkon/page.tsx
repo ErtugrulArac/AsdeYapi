@@ -26,7 +26,7 @@ const manrope = Manrope({ subsets: ["latin"], weight: ["400", "700", "800"] });
 
 export default function CamBalkonPage() {
   return (
-    <main className="w-full font-sans bg-white">
+    <main className="w-full font-sans bg-white ">
       {/* Hero Section */}
       <section className="relative h-[90vh] w-full">
         <Image
@@ -89,8 +89,8 @@ export default function CamBalkonPage() {
           <h1 className={`${specialGothic.className} text-3xl md:text-5xl font-bold text-center text-[#2E2B16] mb-2`}>
             Galerimiz <br className="hidden md:block" />
           </h1>
-          <p className="text-center text-xs text-gray-600 mb-5">Cam balkon projelerimizi keşfedin. (Resimlere tıklayarak inceleyebilirsiniz.)</p>
-          <section id="galeri" className="py-20 ">
+          <p className="text-center text-xs text-gray-600 mb-2">Cam balkon projelerimizi keşfedin. (Resimlere tıklayarak inceleyebilirsiniz.)</p>
+          <section id="galeri" className="py-10 ">
             <div className="container mx-auto px-4">
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 <div className="rounded-xl h-[340px] max-md:h-80 overflow-hidden transform hover:scale-105 transition-transform duration-300">
@@ -124,7 +124,7 @@ export default function CamBalkonPage() {
                 <div className="rounded-xl h-[340px] max-md:h-80 overflow-hidden transform hover:scale-105 transition-transform duration-300">
                   <img
                     src="gal5.webp"
-                    alt="[]"
+                    alt="[Kış bahçesi]"
                     className="w-full h-auto object-cover"
                   />
                 </div>
@@ -133,6 +133,16 @@ export default function CamBalkonPage() {
             </div>
           </section>
 
+        </div>
+      </section>
+
+      {/* CTA button */}
+
+      <section>
+        <div className="flex justify-center ">
+          <a href="tel:05447824655">
+            <Button variant="default">Ücretsiz Keşif Talep Et</Button>
+          </a>
         </div>
       </section>
 
