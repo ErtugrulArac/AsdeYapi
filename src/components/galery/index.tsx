@@ -1,96 +1,49 @@
-"use client";
-import React, { useState, useRef, useEffect } from "react";
-import { LayoutGrid } from "../ui/layout-grid";
-
-export default function LayoutGridDemo() {
-  return (
-    <div className="h-screen pb-20 w-full">
-      <LayoutGrid cards={cards} />
-    </div>
-  );
-}
-
-const SkeletonOne = () => {
-  return (
-    <div>
-      <p className="font-bold md:text-4xl text-xl text-white">
-        Isıcamlı Cam Balkon Çalışmamız
-      </p>
-      <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        Üstün yalıtım performansına sahip ısıcamlı cam balkon montajımız.
-      </p>
-    </div>
-  );
-};
-
-const SkeletonTwo = () => {
-  return (
-    <div>
-      <p className="font-bold md:text-4xl text-xl text-white">
-        Temperli Cam Balkon Çalışmamız
-      </p>
-      <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        Müşterimize şık ve modern görünümlü antgri cam balkon montajı yaptık.
-      </p>
-    </div>
-  );
-};
-const SkeletonThree = () => {
-  return (
-    <div>
-      <p className="font-bold md:text-4xl text-xl text-white">
-        Cam Korkuluk Çalışmamız
-      </p>
-      <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        Müşterimize sağlam ve şık cam korkuluk montajı yaptık.
-      </p>
-    </div>
-  );
-};
-const SkeletonFour = () => {
-  return (
-    <div>
-      <p className="font-bold md:text-4xl text-xl text-white">
-        Temperli Cam Balkon Çalışmamız
-      </p>
-      <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        Müşterimize manzaranın keyfini çıkarabileceği geniş cam balkon montajı yaptık.
-      </p>
-    </div>
-  );
-};
-
-const cards = [
-  {
-    id: 1,
-    content: <SkeletonOne />,
-    className: "md:col-span-1",
-    thumbnail:
-      "gal3.webp",
-  },
-  {
-    id: 2,
-    content: <SkeletonTwo />,
-    className: "col-span-1",
-    thumbnail:
-      "gal2.webp",
-  },
-  {
-    id: 3,
-    content: <SkeletonThree />,
-    className: "col-span-1",
-    thumbnail:
-      "gal1.webp",
-  },
-  {
-    id: 4,
-    content: <SkeletonFour />,
-    className: "md:col-span-1",
-    thumbnail:
-      "gal4.webp",
-  },
-];
+<section id="galeri" className="py-20 bg-gray-950">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Galeri</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+              <div className="rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                <img
+                  src="t1.jpg"
+                  alt="[Evde su arıtma cihazı kurulumu yapan bir teknisyen]"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <div className="rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                <img
+                  src="t4.jpg"
+                  alt="[Bir su arıtma cihazının filtre değişimini gösteren yakın çekim]"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <div className="rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                <img
+                  src="t2.jpg"
+                  alt="[Profesyonel su arıtma ekibini gösteren bir fotoğraf]"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <div className="rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                <img
+                  src="t3.jpg"
+                  alt="[Su arıtma sisteminin genel bakımı]"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <div className="rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                <img
+                  src="t5.jpg"
+                  alt="[Bir ofis ortamında kullanılan su arıtma cihazı]"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <div className="rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                <img
+                  src="t6.jpg"
+                  alt="[Su arıtma hizmetinden memnun bir müşteri gülümsüyor]"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </section>

@@ -15,6 +15,8 @@ import { Button } from "@/components/ui/button";
 import { Manrope, Dela_Gothic_One } from "next/font/google";
 import { Outfit } from "next/font/google"
 import Textaw from "@/components/textaw";
+import Products from "@/components/cambalkonproducts";
+import { ChevronDown } from "lucide-react";
 
 
 const urbanist = Outfit({ subsets: ["latin"], weight: ["300", "400", "600", "700", "900", "800"] })
@@ -49,41 +51,27 @@ export default function CamBalkonPage() {
             </a>
           </div>
         </div>
+
+        {/* Aşağı kaydır ikonu */}
+        <button
+          onClick={() => {
+            const el = document.getElementById("about-section");
+            if (el) {
+              const y = el.getBoundingClientRect().top + window.scrollY - 100; // 100px offset
+              window.scrollTo({ top: y, behavior: "smooth" });
+            }
+          }}
+          className="absolute bottom-6 left-1/2 -translate-x-1/2 animate-bounce text-white"
+        >
+          <ChevronDown size={40} strokeWidth={2.5} />
+        </button>
+
       </section>
 
       {/* Ürünler */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
-          <h1 className={`${specialGothic.className} text-3xl md:text-5xl font-bold text-center text-[#2E2B16] mb-10`}>
-            Cam Balkon <br className="hidden md:block" /> Modellerimiz
-          </h1>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { name: "Isıcamlı Cam Balkon", img: "/isicamli.webp", desc: "Isıcamlı cam balkon, ısı yalıtımı sağlayarak enerji tasarrufu yapmanıza yardımcı olur." },
-              { name: "Temperli Cam Balkon", img: "/temperli.webp", desc: "Temperli cam balkon, yüksek dayanıklılığı ile güvenli bir kullanım sunar." },
-              { name: "Giyotin Sistem", img: "/giyotin.webp", desc: "Giyotin sistem cam balkon, estetik görünümü ile mekanınıza şıklık katar." },
-            ].map((item) => (
-              <Card
-                key={item.name}
-                className="overflow-hidden shadow-md hover:shadow-lg transition"
-              >
-                <Image
-                  src={item.img}
-                  alt={item.name}
-                  width={400}
-                  height={300}
-                  className="object-cover w-full h-70 max-md:h-80"
-                />
-                <CardContent className="p-4 text-center">
-                  <h3 className={`${manrope.className} text-2xl max-md:text-xl font-black mb-2 text-[#2E2B16]`}>{item.name}</h3>
-                  <p className={`${manrope.className} text-sm text-[#585849]`}>{item.desc}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
+      <div id="about-section">
+        <Products />
+      </div>
 
 
       {/* Yazılar */}
@@ -105,42 +93,42 @@ export default function CamBalkonPage() {
           <section id="galeri" className="py-20 ">
             <div className="container mx-auto px-4">
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                <div className="rounded-xl h-[340px] max-md:h-80 overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                <div className="rounded-xl h-[340px] max-md:h-80 overflow-hidden transform hover:scale-105 transition-transform duration-300">
                   <img
                     src="gal1.webp"
                     alt="[Cam korkuluk]"
                     className="w-full h-auto object-contain"
                   />
                 </div>
-                <div className="rounded-xl h-[340px] max-md:h-80 overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                <div className="rounded-xl h-[340px] max-md:h-80 overflow-hidden  transform hover:scale-105 transition-transform duration-300">
                   <img
                     src="gal2.webp"
                     alt="[Bursa ısıcamlı cam balkon]"
                     className="w-full h-auto object-contain"
                   />
                 </div>
-                <div className="rounded-xl h-[340px] max-md:h-80 overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                <div className="rounded-xl h-[340px] max-md:h-80 overflow-hidden transform hover:scale-105 transition-transform duration-300">
                   <img
                     src="gal3.webp"
                     alt="[Profesyonel cam balkon ekibini gösteren bir fotoğraf]"
                     className="w-full h-auto object-cover"
                   />
                 </div>
-                <div className="rounded-xl h-[340px] max-md:h-80 overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                <div className="rounded-xl h-[340px] max-md:h-80 overflow-hidden transform hover:scale-105 transition-transform duration-300">
                   <img
                     src="gal4.webp"
                     alt="[Deniz manzaralı cam balkon]"
                     className="w-full h-auto object-cover"
                   />
                 </div>
-                <div className="rounded-xl h-[340px] max-md:h-80 overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                <div className="rounded-xl h-[340px] max-md:h-80 overflow-hidden transform hover:scale-105 transition-transform duration-300">
                   <img
                     src="gal5.webp"
                     alt="[]"
                     className="w-full h-auto object-cover"
                   />
                 </div>
-                
+
               </div>
             </div>
           </section>
