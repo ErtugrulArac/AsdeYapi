@@ -12,7 +12,7 @@ export default function FlipWordsDemo() {
 
     return (
 
-        <div className="h-[11rem] overflow-y-hidden flex items-center justify-center px-1 overflow-hidden">
+        <div className="h-[11rem]  flex items-center justify-center px-1 overflow-hidden">
 
             <p className="text-3xl mx-auto max-md:text-2xl text-neutral-600 dark:text-neutral-400 font-normal flex flex-wrap items-baseline justify-center gap-x-1 leading-tight">
 
