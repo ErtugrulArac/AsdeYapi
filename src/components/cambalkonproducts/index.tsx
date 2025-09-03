@@ -57,7 +57,7 @@ export default function KategoriBileseni() {
     const urunler: Urun[] = [
 
 
-        { id: "1", title: " Isıcamlı Cam Balkon", imageSrc: "isicamli.webp", kategoriId: "cam-balkon" },
+        { id: "1", title: "Isıcamlı Cam Balkon", imageSrc: "isicamli.webp", kategoriId: "cam-balkon" },
         { id: "2", title: "Temperli Cam Balkon", imageSrc: "temperli.webp", kategoriId: "cam-balkon" },
         { id: "3", title: "Giyotin Sistem", imageSrc: "giyotin.webp", kategoriId: "cam-balkon" },
 
