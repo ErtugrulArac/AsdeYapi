@@ -44,7 +44,7 @@ export default function NavigationMenuDemo() {
               <ListItem href="https://www.asdeyapi.com/#pvc" title="PVC Pencere&Kapı">
                 Tanınmış markaların pvc kapı pencere sistemlerimiz.
               </ListItem>
-              <ListItem href="https://www.asdeyapi.com/#cambalkon" rel="canonical" title="Cam Balkon">
+              <ListItem href="https://www.asdeyapi.com/cambalkon" rel="canonical" title="Cam Balkon">
                 Asde Yapı sektör cam balkon sistemlerimiz.
               </ListItem>
               <ListItem href="https://www.asdeyapi.com/anasineklik" title="Sineklik">

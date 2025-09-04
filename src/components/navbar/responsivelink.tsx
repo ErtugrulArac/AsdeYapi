@@ -44,7 +44,7 @@ const ResponsiveLink = ({ closeMenu }: Props) => {
         onClick={closeMenu}
         title="Asde Yapı Cambalkon Sistemleri"
         className="flex items-center gap-6 text-lg font-medium opacity-90"
-        href="/#cambalkon"
+        href="/cambalkon"
       >
         <MdBalcony size={30} /> Cambalkon
       </a>
