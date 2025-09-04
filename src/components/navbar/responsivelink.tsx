@@ -35,7 +35,7 @@ const ResponsiveLink = ({ closeMenu }: Props) => {
         onClick={closeMenu}
         title="Asde Yapı Sineklik Sistemleri"
         className="flex items-center gap-6 text-lg font-medium opacity-90"
-        href="/anasineklik"
+        href="/#sineklik"
       >
         <GiFly size={30} /> Sineklik
       </a>

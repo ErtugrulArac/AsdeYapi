@@ -47,7 +47,7 @@ export default function NavigationMenuDemo() {
               <ListItem href="https://www.asdeyapi.com/cambalkon" rel="canonical" title="Cam Balkon">
                 Asde Yapı sektör cam balkon sistemlerimiz.
               </ListItem>
-              <ListItem href="https://www.asdeyapi.com/anasineklik" title="Sineklik">
+              <ListItem href="https://www.asdeyapi.com/#sineklik" title="Sineklik">
               Asde Yapı pileli, menteşeli sineklik sistemlerimiz.
               </ListItem>
             </ul>
