@@ -26,7 +26,7 @@ const ResponsiveLink = ({ closeMenu }: Props) => {
         onClick={closeMenu}
         title="Asde yapı Pvc Sistemleri"
         className="flex items-center gap-6 text-lg font-medium opacity-90"
-        href="/#pvc"
+        href="/pvc"
       >
         <BsShopWindow size={30} /> Pvc Kapı Pencere
       </a>

@@ -46,7 +46,7 @@ export default function CamBalkonPage() {
           <div className="flex justify-center lg:justify-start">
             <a href="tel:05447824655">
               <Button className="bg-gradient-to-r from-orange-600 to-orange-500 text-white px-12 py-6 md:text-2xl  rounded-xl font-semibold hover:scale-105 transition cursor-pointer" variant="destructive">
-                Ücretsiz Keşif Talep Et
+                Hemen Fiyat Al
               </Button>
             </a>
           </div>
