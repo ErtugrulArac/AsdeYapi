@@ -32,7 +32,7 @@ export default function PvcPage() {
       {/* Hero Section */}
       <section className="relative h-[90vh] w-full">
         <Image
-          src="/pvchero.png"
+          src="/pvchero.webp"
           alt="PVC Kapı Pencere Bursa"
           fill
           className="object-cover brightness-35"
