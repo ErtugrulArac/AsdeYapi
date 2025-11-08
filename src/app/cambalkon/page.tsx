@@ -17,7 +17,7 @@ import { Outfit } from "next/font/google"
 import Textaw from "@/components/textaw";
 import Products from "@/components/cambalkonproducts";
 import { ChevronDown } from "lucide-react";
-
+import Wp from "@/components/wp/index";
 
 const urbanist = Outfit({ subsets: ["latin"], weight: ["300", "400", "600", "700", "900", "800"] })
 
@@ -27,6 +27,8 @@ const manrope = Manrope({ subsets: ["latin"], weight: ["400", "700", "800"] });
 export default function CamBalkonPage() {
   return (
     <main className="w-full font-sans bg-white ">
+              <Wp />
+      
       {/* Hero Section */}
       <section className="relative h-[90vh] w-full">
         <Image

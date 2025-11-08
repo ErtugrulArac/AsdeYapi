@@ -3,7 +3,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
-import Wp from "@/components/wp/index"
 import Script from "next/script";
 
 
@@ -70,7 +69,6 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
-        <Wp />
         <Footer />
 
 

@@ -6,10 +6,12 @@ import Gıf from "@/components/gıftext/index"
 import Sineklik from "@/components/sineklik/index"
 import Pvc from "@/components/pvc/index"
 import Cambalkon from "@/components/cambalkon/index"
+import Wp from "@/components/wp/index";
 
 export default function Home() {
   return (
     <div >
+      <Wp />
       <Main/>
       <Categories/>
       <Deneme/>
