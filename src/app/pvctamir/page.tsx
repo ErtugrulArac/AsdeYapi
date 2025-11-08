@@ -15,9 +15,9 @@ import { Button } from "@/components/ui/button";
 import { Manrope, Dela_Gothic_One } from "next/font/google";
 import { Outfit } from "next/font/google";
 import Textaw from "@/components/textaw";
-import Products from "@/components/pvcproducts";
+import Products from "@/components/pvctamirproducts";
 import { ChevronDown } from "lucide-react";
-import Wp from "@/components/wp/index";
+import Wp from "@/components/wpt/index";
 
 const urbanist = Outfit({
   subsets: ["latin"],
@@ -44,16 +44,15 @@ export default function PvcPage() {
           <h1
             className={`${urbanist.className} text-4xl md:text-6xl md:w-[40%] font-black uppercase text-white drop-shadow-lg`}
           >
-            DAYANIKLI PVC KAPI & PENCERE ÇÖZÜMLERİ
+            PVC TAMİRİ — KAPI & PENCERE SERVİSİ
           </h1>
           <p
             className={`text-sm w-[80%] max-md:text-center max-md:w-full sm:text-base md:text-lg lg:text-xl text-gray-300`}
           >
-            Asde Yapı uzun ömürlü, yalıtımlı ve garantili PVC kapı pencere
-            montaj hizmeti sunar.
+            Conta değişimi, cam değişimi, kapı/pencere ayarı, kilit‑barel değişimi ve mevsimlik bakım. Bursa geneli hızlı servis.
           </p>
           <div className="flex justify-center lg:justify-start">
-            <a href="tel:05447824655">
+            <a href="tel:05522486977">
               <Button
                 className="bg-gradient-to-r from-orange-600 to-orange-500 text-white px-12 py-6 md:text-2xl  rounded-xl font-semibold hover:scale-105 transition cursor-pointer"
                 variant="destructive"
@@ -95,10 +94,10 @@ export default function PvcPage() {
           <h1
             className={`${specialGothic.className} text-3xl md:text-5xl font-bold text-center text-[#2E2B16] mb-2`}
           >
-            PVC Kapı & Pencere Galerimiz
+            PVC Tamir Çalışmalarımız
           </h1>
           <p className="text-center text-xs text-gray-600 mb-2">
-            Montajını yaptığımız PVC kapı ve pencere projelerimizi inceleyin.
+            Conta değişimi, cam değişimi ve ayar işlemlerinden örnekler.
           </p>
           <section id="galeri" className="py-10 ">
             <div className="container mx-auto px-4">
@@ -133,7 +132,7 @@ export default function PvcPage() {
       {/* CTA button */}
       <section>
         <div className="flex justify-center ">
-          <a href="tel:05447824655">
+          <a href="tel:05522486977">
             <Button variant="default">Ücretsiz Keşif Talep Et</Button>
           </a>
         </div>
