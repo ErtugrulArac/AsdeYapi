@@ -88,9 +88,9 @@ export default function CamBalkonPage() {
 
       <section>
         <div className="max-w-7xl mx-auto px-4  ">
-          <h1 className={`${specialGothic.className} text-3xl md:text-5xl font-bold text-center text-[#2E2B16] mb-2`}>
+          <p className={`${specialGothic.className} text-3xl md:text-5xl font-bold text-center text-[#2E2B16] mb-2`}>
             Galerimiz <br className="hidden md:block" />
-          </h1>
+          </p>
           <p className="text-center text-xs text-gray-600 mb-2">Cam balkon projelerimizi keşfedin. (Resimlere tıklayarak inceleyebilirsiniz.)</p>
           <section id="galeri" className="py-10 ">
             <div className="container mx-auto px-4">
@@ -164,9 +164,9 @@ export default function CamBalkonPage() {
       {/* Referanslar */}
       <section className="py-20 bg-black">
         <div className="max-w-7xl mx-auto px-4">
-          <h1 className={`${specialGothic.className} text-3xl md:text-5xl font-bold text-center text-[white] mb-10`}>
+          <p className={`${specialGothic.className} text-3xl md:text-5xl font-bold text-center text-[white] mb-10`}>
             Müşteri <br className="hidden md:block" /> Yorumlarımız
-          </h1>
+          </p>
           <div className="grid md:grid-cols-3 gap-6">
             {[
               {
