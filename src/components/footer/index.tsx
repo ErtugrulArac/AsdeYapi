@@ -17,7 +17,7 @@ export default function Footer() {
     <footer className="bg-white w-full text-black font-sans pt-16 px-6">
       {/* Newsletter */}
       <div className="max-w-4xl mx-auto text-center mb-20 max-md:mb-3">
-        <h2 className="text-2xl font-semibold mb-2">Asde Yapı Gündemine <br /> Abone Ol</h2>
+        <p className="text-2xl font-semibold mb-2">Asde Yapı Gündemine <br /> Abone Ol</p>
         <p className="text-gray-600 mb-6">Asde Yapı ile alakalı gelişmelerden <br /> haberdar olun.</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <input
@@ -37,10 +37,10 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto border-t pt-10 flex flex-col sm:flex-row justify-between gap-8">
         {/* Logo + Slogan */}
         <div className="sm:w-1/3">
-          <h3 className="text-2xl font-bold mb-2">
+          <p className="text-2xl font-bold mb-2">
             <span className="text-black">Asde</span>
             <span className="text-[#ff7a00]">Yapı</span>
-          </h3>
+          </p>
           <p className="text-gray-500 text-sm max-w-xs">
             Estetik, Dayanıklılık, Konfor
           </p>
