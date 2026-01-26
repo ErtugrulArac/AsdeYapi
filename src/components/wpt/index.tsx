@@ -6,7 +6,7 @@ import { FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
 
 export default function FloatingContactButtons() {
   const [showTooltip, setShowTooltip] = useState(true);
-  const phone = "05522486977";
+  const phone = "05447824655";
 
   const handleConversion = (url: string) => {
     if (typeof window !== "undefined" && (window as any).gtag) {
