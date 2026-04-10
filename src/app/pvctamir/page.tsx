@@ -52,7 +52,7 @@ export default function PvcPage() {
             Conta değişimi, cam değişimi, kapı/pencere ayarı, kilit‑barel değişimi ve mevsimlik bakım. Bursa geneli hızlı servis.
           </p>
           <div className="flex justify-center lg:justify-start">
-            <a href="tel:05522486977">
+            <a href="tel:05447824655">
               <Button
                 className="bg-gradient-to-r from-orange-600 to-orange-500 text-white px-12 py-6 md:text-2xl  rounded-xl font-semibold hover:scale-105 transition cursor-pointer"
                 variant="destructive"
@@ -132,7 +132,7 @@ export default function PvcPage() {
       {/* CTA button */}
       <section>
         <div className="flex justify-center ">
-          <a href="tel:05522486977">
+          <a href="tel:05447824655">
             <Button variant="default">Ücretsiz Keşif Talep Et</Button>
           </a>
         </div>
