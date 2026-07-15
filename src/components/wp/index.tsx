@@ -3,14 +3,29 @@
 
 import React, { useState } from "react";
 import { FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
+import { CONTACT } from "@/lib/contact";
 
-export default function FloatingContactButtons() {
+type Gtag = (...args: unknown[]) => void;
+
+type FloatingContactButtonsProps = {
+  conversionContext?: "cam-balkon";
+};
+
+export default function FloatingContactButtons({ conversionContext }: FloatingContactButtonsProps) {
   const [showTooltip, setShowTooltip] = useState(true);
-  const phone = "05447824655";
 
-  const handleConversion = (url: string) => {
-    if (typeof window !== "undefined" && (window as any).gtag) {
-      (window as any).gtag("event", "conversion", {
+  const handleConversion = (url: string, channel: "phone" | "whatsapp") => {
+    const gtag = (window as Window & { gtag?: Gtag }).gtag;
+
+    if (conversionContext === "cam-balkon") {
+      gtag?.("event", `cam_balkon_${channel}_click`, {
+        event_category: "cam_balkon",
+        link_url: url,
+      });
+    }
+
+    if (gtag) {
+      gtag("event", "conversion", {
         send_to: "AW-17029946954/TTx4CKu94cEaEMq8wbg_",
         event_callback: () => {
           window.location.href = url;
@@ -23,9 +38,9 @@ export default function FloatingContactButtons() {
   
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end space-y-3">
+    <div className="fixed bottom-4 right-4 z-50 flex flex-col items-end space-y-3 sm:bottom-6 sm:right-6">
       {showTooltip && (
-        <div className="bg-white text-black text-sm px-4 py-2 rounded-md shadow-md flex items-center gap-2">
+        <div className="hidden bg-white text-black text-sm px-4 py-2 rounded-md shadow-md sm:flex items-center gap-2">
           <span>Bize mesaj gönderin</span>
           <button
             onClick={() => setShowTooltip(false)}
@@ -38,8 +53,9 @@ export default function FloatingContactButtons() {
 
       {/* {/ WhatsApp Button /} */}
       <button
-        onClick={() => handleConversion(`https://wa.me/90${phone}`)}
-        className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg flex items-center justify-center"
+        onClick={() => handleConversion(CONTACT.whatsapp, "whatsapp")}
+        data-conversion={conversionContext === "cam-balkon" ? "cam-balkon-whatsapp-click" : undefined}
+        className="bg-green-500 hover:bg-green-600 text-white p-3 sm:p-4 rounded-full shadow-lg flex items-center justify-center"
         aria-label="WhatsApp ile mesaj gönder"
       >
         <FaWhatsapp className="text-xl" />
@@ -47,8 +63,9 @@ export default function FloatingContactButtons() {
 
       {/* {/ Phone Button /} */}
       <button
-        onClick={() => handleConversion(`tel:${phone}`)}
-        className="bg-[#e07e22] hover:bg-[#ff7a00] text-white p-4 rounded-full shadow-lg flex items-center justify-center"
+        onClick={() => handleConversion(CONTACT.tel, "phone")}
+        data-conversion={conversionContext === "cam-balkon" ? "cam-balkon-phone-click" : undefined}
+        className="bg-[#e07e22] hover:bg-[#ff7a00] text-white p-3 sm:p-4 rounded-full shadow-lg flex items-center justify-center"
         aria-label="Telefonla ara"
       >
         <FaPhoneAlt className="text-xl" />

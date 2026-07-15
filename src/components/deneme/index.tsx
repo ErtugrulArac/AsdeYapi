@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main className="  pt-12 pb-12 gap-12 flex flex-col items-center  text-left">
       <p className={`${specialGothic.className} text-3xl md:text-5xl font-bold text-center text-[#2E2B16] mb-10`}>
-        Neden Asde Yapı'yı  <br className="hidden md:block" /> Tercih Etmelisin
+        Neden Asde Yapı’yı  <br className="hidden md:block" /> Tercih Etmelisin
       </p>
 
       <div className="grid grid-cols-1 gap-10  md:grid-cols-3 max-w-6xl  max-md:w-[85%] max-md:m-auto">
