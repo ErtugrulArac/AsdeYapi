@@ -1,206 +1,122 @@
-"use client";
-
-import React from "react";
+import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
-import Deneme from "@/components/deneme";
-import Giftext from "@/components/gıftext";
-import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardContent,
-} from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Manrope, Dela_Gothic_One } from "next/font/google";
-import { Outfit } from "next/font/google"
-import Textaw from "@/components/textaw";
-import Products from "@/components/cambalkonproducts";
-import { ChevronDown } from "lucide-react";
-import Wp from "@/components/wp/index";
+import { ArrowDown, MessageCircle } from "lucide-react";
+import { Outfit } from "next/font/google";
+import Wp from "@/components/wp";
+import CamBalkonFaq from "@/components/cambalkon/faq";
+import CamBalkonFinalCta from "@/components/cambalkon/final-cta";
+import CamBalkonGallery from "@/components/cambalkon/gallery";
+import InsulatedGlassSection from "@/components/cambalkon/insulated-glass-section";
+import CamBalkonPricingFactors from "@/components/cambalkon/pricing-factors";
+import CamBalkonProcess from "@/components/cambalkon/process";
+import CamBalkonQuickNav from "@/components/cambalkon/quick-nav";
+import CamBalkonStructuredData from "@/components/cambalkon/structured-data";
+import CamBalkonSystems from "@/components/cambalkon/systems";
+import ConversionLink from "@/components/cambalkon/conversion-link";
+import { CAM_BALKON_WHATSAPP_URL } from "@/components/cambalkon/data";
 
-const urbanist = Outfit({ subsets: ["latin"], weight: ["300", "400", "600", "700", "900", "800"] })
+const outfit = Outfit({
+  subsets: ["latin", "latin-ext"],
+  weight: ["400", "500", "600", "700", "800", "900"],
+});
 
-const specialGothic = Dela_Gothic_One({ subsets: ["latin"], weight: ["400"] });
-const manrope = Manrope({ subsets: ["latin"], weight: ["400", "700", "800"] });
+export const metadata: Metadata = {
+  title: "Bursa Cam Balkon Sistemleri ve Fiyatları | Asde Yapı",
+  description:
+    "Bursa’da katlanır, sürme ve ısıcamlı cam balkon sistemleri. Cam balkon fiyatını etkileyen unsurları inceleyin, keşif ve ölçü talep edin.",
+  alternates: {
+    canonical: "https://asdeyapi.com/cambalkon",
+  },
+  keywords: [
+    "Bursa cam balkon",
+    "cam balkon fiyatları",
+    "ısıcamlı cam balkon",
+    "katlanır cam balkon",
+    "sürme cam balkon",
+  ],
+  openGraph: {
+    title: "Bursa Cam Balkon Sistemleri ve Fiyatları | Asde Yapı",
+    description:
+      "Bursa’da katlanır, sürme ve ısıcamlı cam balkon sistemlerini inceleyin; keşif ve ölçü talep edin.",
+    url: "https://asdeyapi.com/cambalkon",
+    siteName: "Asde Yapı",
+    locale: "tr_TR",
+    type: "website",
+    images: [
+      {
+        url: "https://asdeyapi.com/cambalkon-hero.jpg",
+        width: 1536,
+        height: 1024,
+        alt: "Bursa cam balkon sistemleri",
+      },
+    ],
+  },
+};
 
 export default function CamBalkonPage() {
   return (
-    <main className="w-full font-sans bg-white ">
-              <Wp />
-      
-      {/* Hero Section */}
-      <section className="relative h-[90vh] w-full">
+    <main className={`${outfit.className} w-full overflow-x-clip bg-white`}>
+      <CamBalkonStructuredData />
+      <Wp conversionContext="cam-balkon" />
+
+      <section className="relative flex min-h-[680px] items-center justify-center overflow-hidden px-4 pb-20 pt-36 text-center sm:min-h-[760px]">
         <Image
           src="/cambalkon-hero.jpg"
-          alt="Cam Balkon Bursa"
+          alt="Bursa’da cam balkon uygulaması"
           fill
-          className="object-cover brightness-75"
           priority
+          sizes="100vw"
+          className="object-cover"
         />
-        <div className="absolute inset-0 flex flex-col gap-6 items-center justify-center text-center px-6">
-          <h1 className={`${urbanist.className} text-4xl md:text-6xl md:w-[40%] font-black uppercase text-white drop-shadow-lg`}>
-            CAM BALKONLA DÖRT MEVSİM KEYİF
-          </h1>
-          <p className={`text-sm w-[80%] max-md:text-center max-md:w-full sm:text-base md:text-lg lg:text-xl text-gray-300`}>
-            Asde Yapı dayanıklı, estetik ve garantili cam balkon çözümleri sunar.
+        <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/55 to-black/80" aria-hidden="true" />
+        <div className="relative mx-auto max-w-5xl text-white">
+          <p className="mb-5 text-sm font-bold uppercase tracking-[0.28em] text-orange-400 sm:text-base">
+            Bursa’da ölçüye özel çözümler
           </p>
-          <div className="flex justify-center lg:justify-start">
-            <a href="tel:05447824655">
-              <Button className="bg-gradient-to-r from-orange-600 to-orange-500 text-white px-12 py-6 md:text-2xl  rounded-xl font-semibold hover:scale-105 transition cursor-pointer" variant="destructive">
-                Hemen Fiyat Al
-              </Button>
+          <h1 className="text-4xl font-black leading-tight drop-shadow-xl sm:text-5xl md:text-6xl lg:text-7xl">
+            Bursa Cam Balkon Sistemleri
+          </h1>
+          <p className="mx-auto mt-6 max-w-3xl text-base leading-7 text-neutral-200 sm:text-lg sm:leading-8 md:text-xl">
+            Katlanır, sürme, temperli ve ısıcamlı cam balkon çözümleri. Doğru sistem ve net
+            fiyat için balkonun ölçüsü, kullanım ihtiyacı ve uygulama detayları birlikte
+            değerlendirilir.
+          </p>
+          <div className="mt-9 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
+            <ConversionLink
+              href={CAM_BALKON_WHATSAPP_URL}
+              conversion="cam-balkon-quote-click"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-orange-600 px-7 py-3 font-bold text-white shadow-lg transition hover:bg-orange-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+            >
+              <MessageCircle className="size-5" aria-hidden="true" />
+              Keşif ve Ölçü Talep Et
+            </ConversionLink>
+            <a
+              href="#sistemler"
+              className="inline-flex min-h-12 items-center justify-center rounded-xl border border-white/60 bg-white/10 px-7 py-3 font-bold text-white backdrop-blur transition hover:bg-white hover:text-black focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+            >
+              Sistemleri İncele
             </a>
           </div>
         </div>
-
-        {/* Aşağı kaydır ikonu */}
-        <button
-          onClick={() => {
-            const el = document.getElementById("about-section");
-            if (el) {
-              const y = el.getBoundingClientRect().top + window.scrollY - 100; // 100px offset
-              window.scrollTo({ top: y, behavior: "smooth" });
-            }
-          }}
-          className="absolute bottom-6 left-1/2 -translate-x-1/2 animate-bounce text-white"
+        <a
+          href="#sistemler"
+          aria-label="Cam balkon sistemlerine ilerle"
+          className="absolute bottom-7 left-1/2 flex size-11 -translate-x-1/2 animate-bounce items-center justify-center rounded-full border border-white/40 bg-black/20 text-white backdrop-blur focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400"
         >
-          <ChevronDown size={40} strokeWidth={2.5} />
-        </button>
-
+          <ArrowDown className="size-5" aria-hidden="true" />
+        </a>
       </section>
 
-      {/* Ürünler */}
-      <div id="about-section">
-        <Products />
-      </div>
-
-
-      {/* Yazılar */}
-
-      <section>
-        <Textaw />
-      </section>
-
-
-      {/* Galery */}
-      {/* galeri kısmı değişecek */}
-
-      <section>
-        <div className="max-w-7xl mx-auto px-4  ">
-          <p className={`${specialGothic.className} text-3xl md:text-5xl font-bold text-center text-[#2E2B16] mb-2`}>
-            Galerimiz <br className="hidden md:block" />
-          </p>
-          <p className="text-center text-xs text-gray-600 mb-2">Cam balkon projelerimizi keşfedin. (Resimlere tıklayarak inceleyebilirsiniz.)</p>
-          <section id="galeri" className="py-10 ">
-            <div className="container mx-auto px-4">
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                <div className="rounded-xl h-[340px] max-md:h-80 overflow-hidden transform hover:scale-105 transition-transform duration-300">
-                  <img
-                    src="gal1.webp"
-                    alt="[Cam korkuluk]"
-                    className="w-full h-auto object-contain"
-                  />
-                </div>
-                <div className="rounded-xl h-[340px] max-md:h-80 overflow-hidden  transform hover:scale-105 transition-transform duration-300">
-                  <img
-                    src="gal2.webp"
-                    alt="[Bursa ısıcamlı cam balkon]"
-                    className="w-full h-auto object-contain"
-                  />
-                </div>
-                <div className="rounded-xl h-[340px] max-md:h-80 overflow-hidden transform hover:scale-105 transition-transform duration-300">
-                  <img
-                    src="gal3.webp"
-                    alt="[Profesyonel cam balkon ekibini gösteren bir fotoğraf]"
-                    className="w-full h-auto object-cover"
-                  />
-                </div>
-                <div className="rounded-xl h-[340px] max-md:h-80 overflow-hidden transform hover:scale-105 transition-transform duration-300">
-                  <img
-                    src="gal4.webp"
-                    alt="[Deniz manzaralı cam balkon]"
-                    className="w-full h-auto object-cover"
-                  />
-                </div>
-                <div className="rounded-xl h-[340px] max-md:h-80 overflow-hidden transform hover:scale-105 transition-transform duration-300">
-                  <img
-                    src="gal5.webp"
-                    alt="[Kış bahçesi]"
-                    className="w-full h-auto object-cover"
-                  />
-                </div>
-
-              </div>
-            </div>
-          </section>
-
-        </div>
-      </section>
-
-      {/* CTA button */}
-
-      <section>
-        <div className="flex justify-center ">
-          <a href="tel:05447824655">
-            <Button variant="default">Ücretsiz Keşif Talep Et</Button>
-          </a>
-        </div>
-      </section>
-
-      {/* Neden Asde Yapı */}
-      <div className="max-w-7xl mx-auto px-4">
-        <Deneme />
-      </div>
-
-      {/* Sayılarla Biz */}
-
-      <Giftext />
-
-
-
-
-
-      {/* Referanslar */}
-      <section className="py-20 bg-black">
-        <div className="max-w-7xl mx-auto px-4">
-          <p className={`${specialGothic.className} text-3xl md:text-5xl font-bold text-center text-[white] mb-10`}>
-            Müşteri <br className="hidden md:block" /> Yorumlarımız
-          </p>
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              {
-                name: "Göksel Yıldırım",
-                comment: "Kaliteli ve güvenilir hizmet aldık. Teşekkürler!",
-              },
-              {
-                name: "Nihat Kaya",
-                comment: "Zamanında teslimat, mükemmel işçilik.",
-              },
-              {
-                name: "Ali Koç",
-                comment: "Kesinlikle tavsiye ederim.",
-              },
-            ].map((item, i) => (
-              <Card key={i} className="shadow-md border border-black bg-black">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2 text-orange-400">
-                    {"⭐".repeat(5)}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-50 italic">"{item.comment}"</p>
-                  <p className="mt-3 font-semibold text-gray-200">– {item.name}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-
-
-
+      <CamBalkonQuickNav />
+      <CamBalkonSystems />
+      <CamBalkonGallery />
+      <CamBalkonPricingFactors />
+      <InsulatedGlassSection />
+      <CamBalkonProcess />
+      <CamBalkonFaq />
+      <CamBalkonFinalCta />
     </main>
   );
 }

@@ -199,7 +199,7 @@ export default function SineklikPage() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-50 italic">"{item.comment}"</p>
+                  <p className="text-gray-50 italic">“{item.comment}”</p>
                   <p className="mt-3 font-semibold text-gray-200">– {item.name}</p>
                 </CardContent>
               </Card>

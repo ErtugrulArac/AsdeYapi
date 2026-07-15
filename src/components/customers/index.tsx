@@ -33,7 +33,7 @@ const index = () => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-gray-700 italic">"{item.comment}"</p>
+              <p className="text-gray-700 italic">“{item.comment}”</p>
               <p className="mt-3 font-semibold text-gray-900">– {item.name}</p>
             </CardContent>
           </Card>

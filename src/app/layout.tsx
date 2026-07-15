@@ -17,6 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://asdeyapi.com"),
   title: "Asde Yapı - Bursa PVC, Cam Balkon ve Sineklik Sistemleri",
   description: "Asde Yapı olarak Bursa'da sineklik, cam balkon ve PVC sistemlerinde modern ve kaliteli çözümler sunuyoruz. Hızlı montaj, dayanıklı malzeme ve müşteri memnuniyeti ile fark yaratıyoruz.",
 
@@ -46,7 +47,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="tr">
       <head>
         <Script
           strategy="afterInteractive"

@@ -1,6 +1,7 @@
 "use client"
 
 import * as React from "react"
+import Link from "next/link"
 import { RiHome4Line } from "react-icons/ri";
 
 import { cn } from "@/lib/utils"
@@ -25,7 +26,7 @@ export default function NavigationMenuDemo() {
             <ul className="grid gap-3 p-4 md:w-[400px] max-md:w-full lg:w-[500px] lg:grid-cols-[.75fr_1fr] ">
               <li className="row-span-3 ">
                 <NavigationMenuLink className="bg-black text-white" asChild>
-                  <a title="qr menü ana sayfa"
+                  <Link title="qr menü ana sayfa"
                     className="flex h-full w-full select-none flex-col justify-end rounded-md  from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                     href="/"
                   >
@@ -36,9 +37,9 @@ export default function NavigationMenuDemo() {
                     </div>
 
                     <p className="text-xs leading-tight text-muted-foreground text-white flex text-center opacity-70  ">
-                      Anasayfa'ya dönerek Asde Yapı sistemlerimiz hakkında detaylı bilgi alabilirsiniz.
+                      Anasayfa’ya dönerek Asde Yapı sistemlerimiz hakkında detaylı bilgi alabilirsiniz.
                     </p>
-                  </a>
+                  </Link>
                 </NavigationMenuLink>
               </li>
               <ListItem href="https://www.asdeyapi.com/pvc" title="PVC Pencere&Kapı">
