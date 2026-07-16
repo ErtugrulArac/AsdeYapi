@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { ArrowDown, MessageCircle } from "lucide-react";
+import { ArrowDown, Phone } from "lucide-react";
 import { Outfit } from "next/font/google";
 import Wp from "@/components/wp";
 import CamBalkonFaq from "@/components/cambalkon/faq";
@@ -13,7 +13,7 @@ import CamBalkonQuickNav from "@/components/cambalkon/quick-nav";
 import CamBalkonStructuredData from "@/components/cambalkon/structured-data";
 import CamBalkonSystems from "@/components/cambalkon/systems";
 import ConversionLink from "@/components/cambalkon/conversion-link";
-import { CAM_BALKON_WHATSAPP_URL } from "@/components/cambalkon/data";
+import { CONTACT } from "@/lib/contact";
 
 const outfit = Outfit({
   subsets: ["latin", "latin-ext"],
@@ -83,13 +83,11 @@ export default function CamBalkonPage() {
           </p>
           <div className="mt-9 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
             <ConversionLink
-              href={CAM_BALKON_WHATSAPP_URL}
-              conversion="cam-balkon-quote-click"
-              target="_blank"
-              rel="noreferrer"
+              href={CONTACT.tel}
+              conversion="cam-balkon-phone-click"
               className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-orange-600 px-7 py-3 font-bold text-white shadow-lg transition hover:bg-orange-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
             >
-              <MessageCircle className="size-5" aria-hidden="true" />
+              <Phone className="size-5" aria-hidden="true" />
               Keşif ve Ölçü Talep Et
             </ConversionLink>
             <a
