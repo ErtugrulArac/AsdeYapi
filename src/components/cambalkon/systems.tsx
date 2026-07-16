@@ -29,6 +29,7 @@ export default function CamBalkonSystems() {
 
   React.useEffect(() => {
     if (!api) return;
+    const autoplayPlugin = autoplay.current;
 
     const updateSelectedIndex = () => setSelectedIndex(api.selectedScrollSnap());
     updateSelectedIndex();
@@ -39,8 +40,8 @@ export default function CamBalkonSystems() {
       "(max-width: 767px) and (prefers-reduced-motion: no-preference)"
     );
     const updateAutoplay = () => {
-      if (motionQuery.matches) autoplay.current.play();
-      else autoplay.current.stop();
+      if (motionQuery.matches) autoplayPlugin.play();
+      else autoplayPlugin.stop();
     };
 
     updateAutoplay();
@@ -50,7 +51,7 @@ export default function CamBalkonSystems() {
       api.off("select", updateSelectedIndex);
       api.off("reInit", updateSelectedIndex);
       motionQuery.removeEventListener("change", updateAutoplay);
-      autoplay.current.stop();
+      autoplayPlugin.stop();
     };
   }, [api]);
 
