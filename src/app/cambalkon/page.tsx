@@ -108,8 +108,8 @@ export default function CamBalkonPage() {
       </section>
 
       <CamBalkonQuickNav />
-      <CamBalkonSystems />
       <CamBalkonGallery />
+      <CamBalkonSystems />
       <CamBalkonPricingFactors />
       <InsulatedGlassSection />
       <CamBalkonProcess />
