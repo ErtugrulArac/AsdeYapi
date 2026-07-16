@@ -8,10 +8,10 @@ export const CAM_BALKON_SYSTEMS = [
   {
     name: "Temperli Katlanır Cam Balkon",
     description:
-      "Temperli cam panellerin katlanarak yana toplanabildiği, balkon açıklığını esnek kullanmaya yardımcı olan sistemdir.",
+      "Temperli camların katlanarak yana toplanabildiği, balkon açıklığını esnek kullanmaya yardımcı olan sistemdir.",
     suitableFor:
       "Balkonunu gerektiğinde daha geniş biçimde açmak isteyen kullanıcılar için uygundur.",
-    advantage: "Panellerin bir noktada toplanabilmesi kullanım esnekliği sağlar.",
+    advantage: "Camların bir noktada toplanabilmesi kullanım esnekliği sağlar.",
     image: "/temperli.webp",
     alt: "Temperli katlanır cam balkon sistem görünümü",
   },
@@ -29,7 +29,7 @@ export const CAM_BALKON_SYSTEMS = [
   {
     name: "Giyotin Sistem",
     description:
-      "Cam panellerin dikey hareket prensibiyle çalıştığı, proje ölçüsü ve kullanım beklentisine göre değerlendirilen sistemdir.",
+      "Camların dikey hareket prensibiyle çalıştığı, proje ölçüsü ve kullanım beklentisine göre değerlendirilen sistemdir.",
     suitableFor:
       "Dikey açılım biçiminin kullanım alanına uygun olduğu projeler için değerlendirilebilir.",
     advantage: "Dikey hareket biçimi farklı açıklık ihtiyaçlarına alternatif sunar.",
@@ -57,7 +57,7 @@ export const CAM_BALKON_FAQS = [
   {
     question: "Katlanır mı, sürme cam balkon mu tercih edilmeli?",
     answer:
-      "Seçim; balkonun açıklığına, panellerin nerede toplanacağına ve kullanım alışkanlığına bağlıdır. Ölçü sonrasında iki sistemin alana uygunluğu birlikte değerlendirilir.",
+      "Seçim; balkonun açıklığına, camların nerede toplanacağına ve kullanım alışkanlığına bağlıdır. Ölçü sonrasında iki sistemin alana uygunluğu birlikte değerlendirilir.",
   },
   {
     question: "Ölçü ve keşif süreci nasıl ilerler?",
