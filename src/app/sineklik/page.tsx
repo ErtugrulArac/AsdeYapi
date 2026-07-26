@@ -17,6 +17,9 @@ import Products from "@/components/sineklikproducts";
 import { ChevronDown } from "lucide-react";
 import Wp from "@/components/wp/index";
 
+const SINEKLIK_PHONE_URL = "tel:05522486977";
+const SINEKLIK_WHATSAPP_URL = "https://wa.me/905522486977";
+
 const urbanist = Outfit({
   subsets: ["latin"],
   weight: ["300", "400", "600", "700", "800", "900"],
@@ -35,7 +38,7 @@ const manrope = Manrope({
 export default function SineklikPage() {
   return (
     <main className="w-full font-sans bg-white">
-      <Wp />
+      <Wp phoneUrl={SINEKLIK_PHONE_URL} whatsappUrl={SINEKLIK_WHATSAPP_URL} />
 
       {/* Hero Section */}
       <section className="relative h-[90vh] w-full">
@@ -62,7 +65,7 @@ export default function SineklikPage() {
           </p>
 
           <div className="flex justify-center">
-            <a href="tel:05447824655">
+            <a href={SINEKLIK_PHONE_URL}>
               <Button className="bg-gradient-to-r from-orange-600 to-orange-500 text-white px-12 py-6 md:text-2xl rounded-xl font-semibold hover:scale-105 transition cursor-pointer">
                 Hemen Fiyat Al
               </Button>
@@ -154,7 +157,7 @@ export default function SineklikPage() {
       {/* CTA */}
       <section className="pb-10">
         <div className="flex justify-center">
-          <a href="tel:05447824655">
+          <a href={SINEKLIK_PHONE_URL}>
             <Button variant="default">Ücretsiz Keşif Talep Et</Button>
           </a>
         </div>
@@ -256,7 +259,7 @@ export default function SineklikPage() {
 
           
 
-                <a href="tel:05447824655">
+                <a href={SINEKLIK_PHONE_URL}>
                   <button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-xl font-semibold transition">
                     Hemen Fiyat Al
                   </button>
