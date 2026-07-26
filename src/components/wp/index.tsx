@@ -9,9 +9,15 @@ type Gtag = (...args: unknown[]) => void;
 
 type FloatingContactButtonsProps = {
   conversionContext?: "cam-balkon";
+  phoneUrl?: string;
+  whatsappUrl?: string;
 };
 
-export default function FloatingContactButtons({ conversionContext }: FloatingContactButtonsProps) {
+export default function FloatingContactButtons({
+  conversionContext,
+  phoneUrl = CONTACT.tel,
+  whatsappUrl = CONTACT.whatsapp,
+}: FloatingContactButtonsProps) {
   const [showTooltip, setShowTooltip] = useState(true);
 
   const handleConversion = (url: string, channel: "phone" | "whatsapp") => {
@@ -53,7 +59,7 @@ export default function FloatingContactButtons({ conversionContext }: FloatingCo
 
       {/* {/ WhatsApp Button /} */}
       <button
-        onClick={() => handleConversion(CONTACT.whatsapp, "whatsapp")}
+        onClick={() => handleConversion(whatsappUrl, "whatsapp")}
         data-conversion={conversionContext === "cam-balkon" ? "cam-balkon-whatsapp-click" : undefined}
         className="bg-green-500 hover:bg-green-600 text-white p-3 sm:p-4 rounded-full shadow-lg flex items-center justify-center"
         aria-label="WhatsApp ile mesaj gönder"
@@ -63,7 +69,7 @@ export default function FloatingContactButtons({ conversionContext }: FloatingCo
 
       {/* {/ Phone Button /} */}
       <button
-        onClick={() => handleConversion(CONTACT.tel, "phone")}
+        onClick={() => handleConversion(phoneUrl, "phone")}
         data-conversion={conversionContext === "cam-balkon" ? "cam-balkon-phone-click" : undefined}
         className="bg-[#e07e22] hover:bg-[#ff7a00] text-white p-3 sm:p-4 rounded-full shadow-lg flex items-center justify-center"
         aria-label="Telefonla ara"
