@@ -46,11 +46,14 @@ export default function FloatingContactButtons({
   return (
     <div className="fixed bottom-4 right-4 z-50 flex flex-col items-end space-y-3 sm:bottom-6 sm:right-6">
       {showTooltip && (
-        <div className="hidden bg-white text-black text-sm px-4 py-2 rounded-md shadow-md sm:flex items-center gap-2">
-          <span>Bize mesaj gönderin</span>
+        <div className="flex min-h-10 items-center gap-1 rounded-lg bg-white px-3 py-1.5 text-xs font-semibold text-black shadow-lg sm:gap-2 sm:px-4 sm:py-2 sm:text-sm">
+          <span className="sm:hidden">Bize ulaşın</span>
+          <span className="hidden sm:inline">Bize mesaj gönderin</span>
           <button
+            type="button"
             onClick={() => setShowTooltip(false)}
-            className="ml-2 text-gray-500 hover:text-red-500 text-xs"
+            aria-label="Bize ulaşın mesajını kapat"
+            className="ml-1 inline-flex size-8 items-center justify-center rounded-full text-xs text-gray-500 transition hover:bg-gray-100 hover:text-red-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 sm:ml-2"
           >
             ✕
           </button>

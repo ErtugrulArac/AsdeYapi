@@ -20,7 +20,7 @@ export default function CamBalkonQuickNav() {
   return (
     <nav
       aria-label="Cam balkon sayfası bölümleri"
-      className="sticky top-20 z-40 border-b border-white/10 bg-[#111315]/95 text-white shadow-[0_12px_30px_rgba(0,0,0,0.18)] backdrop-blur-xl"
+      className="sticky top-16 z-40 border-b border-white/10 bg-[#111315]/95 text-white shadow-[0_12px_30px_rgba(0,0,0,0.18)] backdrop-blur-xl"
     >
       <div className="relative mx-auto max-w-7xl">
         <div

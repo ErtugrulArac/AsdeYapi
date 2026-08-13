@@ -68,7 +68,7 @@ export default function CamBalkonPage() {
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/55 to-black/80" aria-hidden="true" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/65 via-black/45 to-black/70" aria-hidden="true" />
         <div className="relative mx-auto max-w-5xl text-white">
           <p className="mb-5 text-sm font-bold uppercase tracking-[0.28em] text-orange-400 sm:text-base">
             Bursa’da ölçüye özel çözümler
@@ -85,13 +85,14 @@ export default function CamBalkonPage() {
             <ConversionLink
               href={CONTACT.tel}
               conversion="cam-balkon-phone-click"
+              googleAdsConversion
               className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-orange-600 px-7 py-3 font-bold text-white shadow-lg transition hover:bg-orange-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
             >
               <Phone className="size-5" aria-hidden="true" />
               Keşif ve Ölçü Talep Et
             </ConversionLink>
             <a
-              href="#sistemler"
+              href="#uygulamalar"
               className="inline-flex min-h-12 items-center justify-center rounded-xl border border-white/60 bg-white/10 px-7 py-3 font-bold text-white backdrop-blur transition hover:bg-white hover:text-black focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
             >
               Sistemleri İncele
@@ -99,8 +100,8 @@ export default function CamBalkonPage() {
           </div>
         </div>
         <a
-          href="#sistemler"
-          aria-label="Cam balkon sistemlerine ilerle"
+          href="#uygulamalar"
+          aria-label="Cam balkon galeri bölümüne ilerle"
           className="absolute bottom-7 left-1/2 flex size-11 -translate-x-1/2 animate-bounce items-center justify-center rounded-full border border-white/40 bg-black/20 text-white backdrop-blur focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400"
         >
           <ArrowDown className="size-5" aria-hidden="true" />

@@ -370,7 +370,7 @@ export default function PremiumHome() {
         </div>
       </section>
 
-      <section className="relative isolate overflow-hidden bg-[#111312] px-4 py-20 text-white sm:px-6 sm:py-24 lg:px-10">
+      <section id="iletisim" className="relative isolate scroll-mt-20 overflow-hidden bg-[#111312] px-4 py-20 text-white sm:px-6 sm:py-24 lg:px-10">
         <Image
           src="/images/home/hero-bioklimatik-pergola.webp"
           alt=""
@@ -414,7 +414,7 @@ export default function PremiumHome() {
         </div>
       </section>
 
-      <section id="sineklik" className="scroll-mt-20 px-4 py-16 sm:px-6 sm:py-20 lg:px-10">
+      <section id="diger-hizmetler" className="scroll-mt-20 px-4 py-16 sm:px-6 sm:py-20 lg:px-10">
         <div className="mx-auto max-w-7xl">
           <div className="max-w-2xl">
             <p className="text-xs font-black uppercase tracking-[0.24em] text-orange-600">
