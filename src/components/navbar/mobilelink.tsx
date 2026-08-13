@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Menu } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -45,9 +46,13 @@ export default function MobileNavigation() {
       >
         <SheetHeader className="border-b border-white/10 px-5 pb-5 pt-[max(1.25rem,env(safe-area-inset-top))] text-left">
           <SheetTitle className="pr-12 text-white">
-            <span className="text-2xl font-black tracking-[-0.04em]">
-              Asde<span className="text-orange-500">Yapı</span>
-            </span>
+            <Image
+              src="/asde-yapi-navbar.webp"
+              alt="Asde Yapı"
+              width={161}
+              height={113}
+              className="h-14 w-auto object-contain"
+            />
           </SheetTitle>
           <SheetDescription className="sr-only">
             Asde Yapı sayfaları ve iletişim seçenekleri

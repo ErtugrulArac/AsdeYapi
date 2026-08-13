@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -35,9 +36,17 @@ export default function Navbar() {
           aria-label="Asde Yapı ana sayfasına git"
           className="flex min-h-11 shrink-0 items-center rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-4 focus-visible:ring-offset-[#0b0d0c]"
         >
-          <span className="text-xl font-black tracking-[-0.04em] sm:text-2xl">
-            Asde<span className="text-orange-500">Yapı</span>
-          </span>
+          <Image
+            src="/asde-yapi-navbar.webp"
+            alt="Asde Yapı"
+            width={322}
+            height={226}
+            priority
+            className={cn(
+              "h-12 w-auto object-contain transition-[height] duration-300 motion-reduce:transition-none lg:h-14",
+              hasScrolled && "h-10 lg:h-11",
+            )}
+          />
         </Link>
 
         <div className="hidden min-w-0 items-center justify-end lg:flex">
