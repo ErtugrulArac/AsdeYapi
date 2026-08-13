@@ -1,13 +1,11 @@
 "use client";
 
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { GiHamburgerMenu } from "react-icons/gi";
-import ResponsiveLink from "./responsivelink";
+import { Menu } from "lucide-react";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 import {
   Sheet,
-  SheetClose,
   SheetContent,
   SheetDescription,
   SheetHeader,
@@ -15,37 +13,51 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-export default function SheetDemo() {
-  const [isOpen, setIsOpen] = useState(false); // menü kontrolü
+import ResponsiveLink from "./responsivelink";
+
+export default function MobileNavigation() {
+  const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    const frame = window.requestAnimationFrame(() => setIsOpen(false));
+    return () => window.cancelAnimationFrame(frame);
+  }, [pathname]);
 
   return (
     <Sheet open={isOpen} onOpenChange={setIsOpen}>
       <SheetTrigger asChild>
-        <Button
-          className="text-white max-md:text-xs py-1 px-2 font-bold border-none bg-transparent"
-          variant="outline"
+        <button
+          type="button"
+          aria-label="Menüyü aç"
+          aria-expanded={isOpen}
+          aria-controls="mobile-navigation-panel"
+          className="inline-flex size-12 items-center justify-center rounded-full border border-white/15 bg-white/7 text-white transition hover:border-white/30 hover:bg-white/12 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0b0d0c]"
         >
-          <GiHamburgerMenu size={22} />
-        </Button>
+          <Menu className="size-6" aria-hidden="true" />
+        </button>
       </SheetTrigger>
 
-      <SheetContent className="overflow-auto" side="left">
-        <SheetHeader>
-          <SheetTitle className="flex items-center justify-center">
-            <img className="w-32" src="/asdekarbeyaz.webp" alt="Asde Logo" />
+      <SheetContent
+        id="mobile-navigation-panel"
+        side="right"
+        className="z-[100] w-full gap-0 overflow-y-auto border-l border-white/10 bg-[#101211] p-0 text-white shadow-2xl sm:max-w-[430px] [&>button]:right-3 [&>button]:top-[max(0.75rem,env(safe-area-inset-top))] [&>button]:z-10 [&>button]:text-white"
+      >
+        <SheetHeader className="border-b border-white/10 px-5 pb-5 pt-[max(1.25rem,env(safe-area-inset-top))] text-left">
+          <SheetTitle className="pr-12 text-white">
+            <span className="text-2xl font-black tracking-[-0.04em]">
+              Asde<span className="text-orange-500">Yapı</span>
+            </span>
           </SheetTitle>
-          <SheetDescription className="text-center">
-            Estetik, Dayanıklılık, Konfor
-            <p className="font-bold">0544 782 4655</p>
+          <SheetDescription className="sr-only">
+            Asde Yapı sayfaları ve iletişim seçenekleri
           </SheetDescription>
+          <p className="pt-1 text-xs font-bold uppercase tracking-[0.18em] text-white/45">
+            Estetik · Dayanıklılık · Konfor
+          </p>
         </SheetHeader>
 
-        <div className="py-4 w-full">
-          {/* Menü kapansın diye SheetClose içine alındı */}
-          <SheetClose asChild>
-            <ResponsiveLink closeMenu={() => setIsOpen(false)} />
-          </SheetClose>
-        </div>
+        <ResponsiveLink pathname={pathname} closeMenu={() => setIsOpen(false)} />
       </SheetContent>
     </Sheet>
   );
