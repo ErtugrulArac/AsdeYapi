@@ -67,7 +67,7 @@ export default function CamBalkonPricingFactors() {
             </div>
             <aside className="mt-6 rounded-2xl border-l-4 border-orange-500 bg-black p-6 text-white shadow-xl">
               <p className="text-base font-semibold leading-7">
-                Fotoğraf, balkonun genel yapısını anlamamıza yardımcı olur. Kesin fiyat,
+                Fotoğraf, balkonun genel yapısını anlamamıza yardımcı olur. Net fiyat,
                 yerinde ölçü ve sistem seçimi sonrasında hazırlanır.
               </p>
             </aside>
