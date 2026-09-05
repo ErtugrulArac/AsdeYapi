@@ -40,14 +40,24 @@ export const CAM_BALKON_SYSTEMS = [
 
 export const CAM_BALKON_FAQS = [
   {
+    question: "Bursa içinde keşif ücretli mi?",
+    answer:
+      "Hayır. Bursa içindeki cam balkon uygulamaları için keşif ve ölçüm ücretsizdir.",
+  },
+  {
+    question: "Üretim ve montaj ne kadar sürer?",
+    answer:
+      "Keşif, ölçü ve sipariş onayından sonra ortalama üretim ve montaj süresi yaklaşık 2 haftadır. Süre proje detayları ve iş yoğunluğuna göre değişebilir.",
+  },
+  {
     question: "Cam balkon fiyatı nasıl hesaplanır?",
     answer:
       "Fiyat; balkonun en ve yükseklik ölçüleri, toplam uygulama alanı, seçilen sistem, cam ve profil tercihleri ile montaj koşulları birlikte değerlendirilerek hazırlanır.",
   },
   {
-    question: "Sadece fotoğraf göndererek kesin fiyat alınabilir mi?",
+    question: "Sadece fotoğraf göndererek net fiyat alınabilir mi?",
     answer:
-      "Hayır. Fotoğraf yalnızca balkonun genel yapısını anlamaya yardımcı olur. Kesin fiyat, yerinde ölçü ve sistem seçimi sonrasında verilir.",
+      "Hayır. Fotoğraf yalnızca balkonun genel yapısını anlamaya yardımcı olur. Net fiyat, yerinde ölçü ve sistem seçimi sonrasında verilir.",
   },
   {
     question: "Isıcamlı cam balkon ile tek camlı sistem arasındaki fark nedir?",

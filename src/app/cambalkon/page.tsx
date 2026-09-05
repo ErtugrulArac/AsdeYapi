@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { ArrowDown, Phone } from "lucide-react";
+import { ArrowDown, CheckCircle2, Phone } from "lucide-react";
 import { Outfit } from "next/font/google";
 import Wp from "@/components/wp";
 import CamBalkonFaq from "@/components/cambalkon/faq";
@@ -8,6 +8,7 @@ import CamBalkonFinalCta from "@/components/cambalkon/final-cta";
 import CamBalkonGallery from "@/components/cambalkon/gallery";
 import InsulatedGlassSection from "@/components/cambalkon/insulated-glass-section";
 import CamBalkonPricingFactors from "@/components/cambalkon/pricing-factors";
+import CamBalkonStartingPrices from "@/components/cambalkon/starting-prices";
 import CamBalkonProcess from "@/components/cambalkon/process";
 import CamBalkonQuickNav from "@/components/cambalkon/quick-nav";
 import CamBalkonStructuredData from "@/components/cambalkon/structured-data";
@@ -23,7 +24,7 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: "Bursa Cam Balkon Sistemleri ve Fiyatları | Asde Yapı",
   description:
-    "Bursa’da katlanır, sürme ve ısıcamlı cam balkon sistemleri. Cam balkon fiyatını etkileyen unsurları inceleyin, keşif ve ölçü talep edin.",
+    "Bursa’da doğrudan üreticiden cam balkon. Montaj dahil başlangıç fiyatları, ücretsiz keşif; katlanır, sürme ve ısıcamlı sistemler.",
   alternates: {
     canonical: "https://asdeyapi.com/cambalkon",
   },
@@ -37,7 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Bursa Cam Balkon Sistemleri ve Fiyatları | Asde Yapı",
     description:
-      "Bursa’da katlanır, sürme ve ısıcamlı cam balkon sistemlerini inceleyin; keşif ve ölçü talep edin.",
+      "Bursa’da doğrudan üreticiden cam balkon. Montaj dahil başlangıç fiyatları, ücretsiz keşif; katlanır, sürme ve ısıcamlı sistemler.",
     url: "https://asdeyapi.com/cambalkon",
     siteName: "Asde Yapı",
     locale: "tr_TR",
@@ -71,16 +72,24 @@ export default function CamBalkonPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/65 via-black/45 to-black/70" aria-hidden="true" />
         <div className="relative mx-auto max-w-5xl text-white">
           <p className="mb-5 text-sm font-bold uppercase tracking-[0.28em] text-orange-400 sm:text-base">
-            Bursa’da ölçüye özel çözümler
+            Bursa’da Doğrudan Üreticiden
           </p>
           <h1 className="text-4xl font-black leading-tight drop-shadow-xl sm:text-5xl md:text-6xl lg:text-7xl">
             Bursa Cam Balkon Sistemleri
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-base leading-7 text-neutral-200 sm:text-lg sm:leading-8 md:text-xl">
-            Katlanır, sürme, temperli ve ısıcamlı cam balkon çözümleri. Doğru sistem ve net
-            fiyat için balkonun ölçüsü, kullanım ihtiyacı ve uygulama detayları birlikte
-            değerlendirilir.
+            Katlanır, sürme, temperli ve ısıcamlı cam balkon sistemlerini ölçünüze özel
+            üretiyor, montajını gerçekleştiriyoruz. Montaj dahil başlangıç fiyatları ve
+            Bursa içi ücretsiz keşif avantajıyla balkonunuza uygun sistemi birlikte belirleyelim.
           </p>
+          <ul className="mt-6 flex flex-wrap justify-center gap-3 text-sm font-semibold text-white">
+            {["Doğrudan Üretim", "Montaj Dahil", "Bursa İçi Ücretsiz Keşif"].map((label) => (
+              <li key={label} className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-black/30 px-4 py-2">
+                <CheckCircle2 className="size-4 shrink-0 text-orange-400" aria-hidden="true" />
+                {label}
+              </li>
+            ))}
+          </ul>
           <div className="mt-9 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
             <ConversionLink
               href={CONTACT.tel}
@@ -112,6 +121,7 @@ export default function CamBalkonPage() {
       <CamBalkonGallery />
       <CamBalkonSystems />
       <CamBalkonPricingFactors />
+      <CamBalkonStartingPrices />
       <InsulatedGlassSection />
       <CamBalkonProcess />
       <CamBalkonFaq />

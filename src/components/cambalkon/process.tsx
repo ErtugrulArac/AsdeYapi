@@ -18,7 +18,7 @@ const steps = [
   },
   {
     title: "İmalat ve Montaj",
-    description: "Onaylanan ölçü ve sisteme göre üretim ve montaj yapılır.",
+    description: "Onaylanan ölçü ve sisteme göre üretim ve montaj planlanır. Ortalama tamamlanma süresi yaklaşık 2 haftadır; proje ve iş yoğunluğuna göre değişebilir.",
     icon: Factory,
   },
 ] as const;
