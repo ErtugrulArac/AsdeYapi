@@ -3,9 +3,9 @@ import ConversionLink from "./conversion-link";
 import { CAM_BALKON_WHATSAPP_URL } from "./data";
 
 const prices = [
-  { name: "8 mm Temperli Katlanır Cam Balkon", price: "3.700" },
-  { name: "Isıcamlı Katlanır Cam Balkon", price: "5.600" },
-  { name: "Sürme Cam Balkon", price: "5.600" },
+  { name: "8 mm Temperli Katlanır Cam Balkon", price: "3.600" },
+  { name: "Isıcamlı Katlanır Cam Balkon", price: "5.500" },
+  { name: "Sürme Cam Balkon", price: "5.500" },
 ] as const;
 
 export default function CamBalkonStartingPrices() {
