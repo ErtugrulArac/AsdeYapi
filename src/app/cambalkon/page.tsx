@@ -72,15 +72,14 @@ export default function CamBalkonPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/65 via-black/45 to-black/70" aria-hidden="true" />
         <div className="relative mx-auto max-w-5xl text-white">
           <p className="mb-5 text-sm font-bold uppercase tracking-[0.28em] text-orange-400 sm:text-base">
-            Bursa’da Doğrudan Üreticiden
+            Doğrudan Üreticiden
           </p>
           <h1 className="text-4xl font-black leading-tight drop-shadow-xl sm:text-5xl md:text-6xl lg:text-7xl">
             Bursa Cam Balkon Sistemleri
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-base leading-7 text-neutral-200 sm:text-lg sm:leading-8 md:text-xl">
             Katlanır, sürme, temperli ve ısıcamlı cam balkon sistemlerini ölçünüze özel
-            üretiyor, montajını gerçekleştiriyoruz. Montaj dahil başlangıç fiyatları ve
-            Bursa içi ücretsiz keşif avantajıyla balkonunuza uygun sistemi birlikte belirleyelim.
+            üretiyor, montajını gerçekleştiriyoruz.
           </p>
           <ul className="mt-6 flex flex-wrap justify-center gap-3 text-sm font-semibold text-white">
             {["Doğrudan Üretim", "Montaj Dahil", "Bursa İçi Ücretsiz Keşif"].map((label) => (
@@ -121,9 +120,9 @@ export default function CamBalkonPage() {
       <CamBalkonGallery />
       <CamBalkonSystems />
       <CamBalkonPricingFactors />
-      <CamBalkonStartingPrices />
       <InsulatedGlassSection />
       <CamBalkonProcess />
+      <CamBalkonStartingPrices />
       <CamBalkonFaq />
       <CamBalkonFinalCta />
     </main>
